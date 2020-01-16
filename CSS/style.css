@@ -1,43 +1,52 @@
-h1{
-    text-align: center;
-    color: green;
-    font-size: 24px;
-    margin: 0;
-}
-/* Header/Logo Title */
-.header {
-    padding: 60px;
-    text-align: center;
-    background: #1abc9c;
-    color: white;
-    font-size: 30px;
-}
-
-p {
-    text-align: left;
-    color: black;
-    font-size: 18px;
-}
-ul {
-    list-style-type: none;
+body{
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #333;
+    background: url(Images/wallpaper.jpg) no-repeat;
+    background-size: cover;
 }
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
+.box{
+    width: 450px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    margin: auto;
+    margin-top: 5%;
+    color: white;
+    font-family: 'Century Gothic',sans-serif;
 }
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: #111;
+.box-img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.box h1{
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+.box h5{
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+.box p{
+    text-align: justify;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.box li{
+    display: inline-block;
+    margin: 6px;
+    list-style: none;
+}
+.box li a{
+    color: white;
+    text-decoration: none;
+    font-size: 60px;
+    transition: all ease-in-out 250ms;
+}
+.box li a:hover{
+    color: #b9b9b9;
 }
