@@ -15,8 +15,6 @@ class Header extends React.Component {
     window.addEventListener('scroll', this.handleScroll)
   }
 
-  // Header Animation
-
   handleScroll = (event) => {
     const scrollTop = window.pageYOffset
 
@@ -32,9 +30,9 @@ class Header extends React.Component {
     return (
       <div className={this.state.hasScrolled ? 'Header HeaderScrolled' : 'Header'}>
         <div className="HeaderGroup">
-          <Link to="/aboutme">About Me</Link>
-          <Link to="/projects">Projects</Link>
-          <Link to="/blog">Blog</Link>
+          <a href="#AboutMe">About Me</a>
+          <a href="#Projects">Projects</a>
+          <Link to="/workshops">Blog</Link>
           <Link to="/contact">Contact</Link>
         </div>
       </div>
