@@ -351,8 +351,16 @@
             "version": "^0.1.8"
           },
           {
+            "name": "command-exists",
+            "version": "^1.2.8"
+          },
+          {
             "name": "cryptiles",
             "version": ">=4.1.2"
+          },
+          {
+            "name": "deep-extend",
+            "version": "^0.6.0"
           },
           {
             "name": "font-awesome",
@@ -372,19 +380,47 @@
           },
           {
             "name": "handlebars",
-            "version": ">=4.3.0"
+            "version": "^4.7.3"
+          },
+          {
+            "name": "js-yaml",
+            "version": "^3.13.1"
+          },
+          {
+            "name": "lodash",
+            "version": "^4.17.15"
           },
           {
             "name": "lodash-es",
-            "version": ">=4.17.14"
+            "version": "^4.17.15"
+          },
+          {
+            "name": "lodash.merge",
+            "version": "^4.6.2"
           },
           {
             "name": "lodash.template",
-            "version": ">=4.5.0"
+            "version": "^4.5.0"
+          },
+          {
+            "name": "macaddress",
+            "version": "^0.2.9"
+          },
+          {
+            "name": "merge",
+            "version": "^1.2.1"
+          },
+          {
+            "name": "mixin-deep",
+            "version": "^2.0.1"
           },
           {
             "name": "open",
-            "version": ">=6.0.0"
+            "version": "^7.0.2"
+          },
+          {
+            "name": "querystringify",
+            "version": "^2.1.1"
           },
           {
             "name": "react-helmet",
@@ -392,15 +428,23 @@
           },
           {
             "name": "serve",
-            "version": ">=7.1.3"
+            "version": "^11.3.0"
+          },
+          {
+            "name": "set-value",
+            "version": "^3.0.1"
           },
           {
             "name": "tar-fs",
-            "version": ">=1.16.2"
+            "version": "^2.0.0"
+          },
+          {
+            "name": "url-parse",
+            "version": "^1.4.7"
           },
           {
             "name": "ws",
-            "version": ">=3.1.1"
+            "version": "^7.2.1"
           }
         ],
         "devDependencies": [
@@ -431,12 +475,12 @@
       },
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2020-03-05T12:20:51.855Z",
+      "buildTime": "2020-03-05T12:33:50.461Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "98759fea378bf5287abf9705c8fa1f83",
+        "contentDigest": "9fc09b627c1f349f5e1248db54107ba6",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -457,7 +501,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "6f3635ce00676eb60393cee456f2f601",
+        "contentDigest": "0c3b3acad9bf6b3adab883430328e0e9",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -478,7 +522,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "db384abef391633b97406d10aae6163d",
+        "contentDigest": "ffe9e1c4a2fc24c7faa2d4f00fad5056",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -499,7 +543,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "feb0918bf31f466d5b50dd06625b2962",
+        "contentDigest": "3f919fada67a3969796d7c1e901a17e3",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -520,7 +564,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "88b0f836d293d794ecb6a9a024cd93cc",
+        "contentDigest": "b847bd44c07dcf87452280d7d657c28b",
         "description": "Plugin prod-404",
         "owner": "internal-data-bridge"
       }
@@ -528,7 +572,7 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "d09354ffd03661949d68a11e5c45e256"
+    "PLUGINS_HASH": "aaacc57b62c4adfad0157237d386e0b2"
   },
   "componentDataDependencies": {
     "nodes": {
