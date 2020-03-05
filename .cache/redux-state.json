@@ -345,6 +345,38 @@
           {
             "name": "react-helmet",
             "version": "^5.2.0"
+          },
+          {
+            "name": "ws",
+            "version": ">=3.1.1"
+          },
+          {
+            "name": "handlebars",
+            "version": ">=4.3.0"
+          },
+          {
+            "name": "lodash.template",
+            "version": ">=4.5.0"
+          },
+          {
+            "name": "lodash-es",
+            "version": ">=4.17.14"
+          },
+          {
+            "name": "open",
+            "version": ">=6.0.0"
+          },
+          {
+            "name": "tar-fs",
+            "version": ">=1.16.2"
+          },
+          {
+            "name": "cryptiles",
+            "version": ">=4.1.2"
+          },
+          {
+            "name": "serve",
+            "version": ">=7.1.3"
           }
         ],
         "devDependencies": [
@@ -375,12 +407,12 @@
       },
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2020-03-04T11:24:53.239Z",
+      "buildTime": "2020-03-04T22:56:13.153Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "75b59047fc83ac5c06ddc96174673f24",
+        "contentDigest": "9c701232d32503bc583d15a06eab9825",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -401,7 +433,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "f71c3307324d4120722a4840075dde31",
+        "contentDigest": "c451f4b0b6a8f092a5ee44e8cd676a0a",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -422,7 +454,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "d0e711dd724ef738f3f4548a83096371",
+        "contentDigest": "198bbb38b7879fc7b9207b3b3b5700b8",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -443,7 +475,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "7a6b41dd04fe8f008e1b6702ddc895bb",
+        "contentDigest": "9c046d86278c7e658fb728016781819b",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -464,7 +496,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "108d991d16d0f437c0b08adfcd6283f8",
+        "contentDigest": "433464f7f4a121a3da0bcd7fe11dedd1",
         "description": "Plugin prod-404",
         "owner": "internal-data-bridge"
       }
@@ -472,7 +504,7 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "b803c76c9d83aeb123088a2931c0b803"
+    "PLUGINS_HASH": "16698b5fd570c4411fa0eceea3d63d84"
   },
   "componentDataDependencies": {
     "nodes": {

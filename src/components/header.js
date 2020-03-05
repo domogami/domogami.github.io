@@ -15,6 +15,8 @@ class Header extends React.Component {
     window.addEventListener('scroll', this.handleScroll)
   }
 
+  // Header Animation
+
   handleScroll = (event) => {
     const scrollTop = window.pageYOffset
 
