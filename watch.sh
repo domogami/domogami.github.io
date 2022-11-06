@@ -1,0 +1,3 @@
+#!/bin/bash
+
+export GOBIN=$HOME/go/bin/; export GOPATH=$HOME/go; export GOROOT=/opt/homebrew/bin/go; export PATH=$PATH:$HOME/bin; export PATH=$PATH:$GOROOT/bin; cd /Users/dom/Documents/GitHub/obsidian-site/quartz; nodemon -w ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Dom\'s\ 2nd\ Brain/ -w /Users/dom/Documents/GitHub/obsidian-site/quartz/assets/js -w /Users/dom/Documents/GitHub/obsidian-site/quartz/assets/styles -w /Users/dom/Documents/GitHub/obsidian-site/quartz/layouts -w /Users/dom/Documents/GitHub/obsidian-site/quartz/config.toml -w /Users/dom/Documents/GitHub/obsidian-site/quartz/data/config.yaml -x "/Users/dom/Documents/GitHub/obsidian-site/quartz/compile.sh" -e md,html,js,scss,xml
