@@ -11,20 +11,22 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:jobs:
-  deploy:
+
+jobs:
+  build:
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: '0.96.0'
-          extended: true
+      # - uses: actions/checkout@v2
+      #   with:
+      #     fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+      # - name: Setup Hugo
+      #   uses: peaceiris/actions-hugo@v2
+      #   with:
+      #     hugo-version: '0.96.0'
+      #     extended: true
 
-      - name: Build
-        run: hugo --minify
+      # - name: Build
+      #   run: hugo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
@@ -33,13 +35,3 @@ on:
           publish_dir: ./public
           publish_branch: master  # deploying branch
           cname: domogami.github.io
-
-
-# // OLD
-# - name: Deploy  
-#   uses: peaceiris/actions-gh-pages@v3  
-#   with:  
-# 	github_token: ${{ secrets.GITHUB_TOKEN }} # this can stay as is, GitHub fills this in for us!
-# 	publish_dir: ./public  
-# 	publish_branch: master
-# 	cname: domogami.github.io
