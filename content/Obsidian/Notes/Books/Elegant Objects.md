@@ -1,0 +1,5 @@
+---
+title: Elegant Objects
+---
+
+# Introduction
