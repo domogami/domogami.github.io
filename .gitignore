@@ -5,3 +5,7 @@ resources
 content/.obsidian
 assets/indices/linkIndex.json
 assets/indices/contentIndex.json
+/content/Personal/
+/content/Personal/*
+Personal/
+Personal/*

@@ -21,10 +21,9 @@ tags:
 
 ## Issues
 
-* [Editor.js](Editorjs.md)
-* [Image API](Image%20API.md)
+* [Editorjs](Blog%20Redesign/Editorjs.md)
+* [Image API](Blog%20Redesign/Image%20API.md)
 
 ## Blog Posts
 
-* [First Blog Post](First%20Blog%20Post.md)
-* [Car Insurance](../Life%20Skills/Car%20Insurance.md)
+* [First Blog Post](Blog%20Redesign/First%20Blog%20Post.md)

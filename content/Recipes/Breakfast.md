@@ -14,3 +14,4 @@ tags:
 * 6oz Plain Yogurt
 * 1oz Honey/granulated sugar
 * 1/2 Banana
+* .2 pb2

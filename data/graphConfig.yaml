@@ -34,4 +34,4 @@ globalGraph:
 ### For all graphs ###
 
 paths:
-  - /Obsidian: "#4388cc"
+  - /: "#4388cc"
