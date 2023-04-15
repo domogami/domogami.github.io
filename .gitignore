@@ -16,3 +16,7 @@ tsconfig.tsbuildinfo
 private/
 .replit
 replit.nix
+/content/Personal/
+/content/Personal/*
+Personal/
+Personal/*
