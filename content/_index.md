@@ -6,7 +6,7 @@ title: Welcome
 
 Welcome to my digital garden! This is my continuously growing personal wiki where I write about things that I learn and my experiences throughout my journey as a Software Engineer. If you are curious why I chose Obsidian, take a look at [Why Obsidian?](Blog%20Redesign/Why%20Obsidian?.md). 
 
-If you are curious, check out some of the topics I have written about below or use the interactive graph at the bottom of the page to navigate.
+If you are curious, check out some of the topics I have written about below or use the interactive graph at the bottom of the page to navigate. If you'd like to visit my personal website written with Remix, visit [dominicklee.net](https://dominicklee.net)
 
 ## ✍️ Blog Posts
 
