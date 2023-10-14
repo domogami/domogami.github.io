@@ -10,6 +10,7 @@ If you are curious, check out some of the topics I have written about below or u
 
 ## ✍️ Blog Posts
 
+* [The Best MacOS Window Manager Yabai](Blog%20Redesign/The%20Best%20MacOS%20Window%20Manager%20Yabai.md)
 * [Blog Redesign](Blog%20Redesign/Blog%20Redesign.md)
 * [First Blog Post](Blog%20Redesign/First%20Blog%20Post.md)
 
@@ -23,7 +24,6 @@ If you are curious, check out some of the topics I have written about below or u
 * [Clean Code](Books/Clean%20Code.md)
 * [Elegant Objects](Books/Elegant%20Objects.md)
 * [Java Concurrency In Practice](Books/Java%20Concurrency%20In%20Practice.md)
-* Design Patterns
 
 ## 🎥 YouTube Video Scripts
 
@@ -34,3 +34,13 @@ If you are curious, check out some of the topics I have written about below or u
 * [Abstract Algebra 1](School/Algebra.md)
 * [Abstract Algebra 2](School/103B.md)
 * [Geometry](School/Geometry.md)
+
+Olga is renting it and 
+
+Olga olham
+
+Husband name daniel
+206-430-8848
+
+Apt 14
+Tell her gale told
