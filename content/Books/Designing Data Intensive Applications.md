@@ -108,10 +108,9 @@ The naïve way to calculate response times over a given period of time is to kee
 * Simplicity: Make it easy for new engineers to understand the system (by removing complexity when possible)
 * Evolvability: Make it easy for engineers to change the system and adapt it to new use cases
 
-````ad-quote
-“good operations can often work around the limitations of bad (or
-incomplete) software, but good software cannot run reliably with bad operations”
-````
+ > 
+ > \[!quote\] 
+ > “good operations can often work around the limitations of bad (or incomplete) software, but good software cannot run reliably with bad operations”
 
 Operations teams should
 
