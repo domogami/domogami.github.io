@@ -1,3 +1,33 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+:root {
+  --light: #EFEEEE !important;
+  --dark: #141021 !important;
+  --secondary: #284b63 !important;
+  --tertiary: #84a59d !important;
+  --visited: #afbfc9 !important;
+  --primary: #f28482 !important;
+  --gray: #4e4e4e !important;
+  --lightgray: #282C34 !important;
+  --outlinegray: #dadada !important;
+  --million-progress-bar-color: var(--secondary);
+}
+
+[saved-theme="dark"] {
+  --light: #282c34 !important;
+  --dark: #ABB2BF !important;
+  --secondary: #61AFEF !important;
+  --visited: #4a575e !important;
+  --tertiary: #84a59d !important;
+  --primary: #E06C75 !important;
+  --gray: #FFFFFF !important;
+  --truelightgray: #4e4e4e !important;
+  --codebackground: #d4d4d4 !important;
+  --lightgray: #C678DD !important;
+  --darkgray: #ABB2BF !important;
+  --outlinegray: #ABB2BF !important;
+}
+
+// #181b20 Very dark
+// #1f2329 Less dark

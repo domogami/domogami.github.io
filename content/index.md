@@ -1,5 +1,5 @@
 ---
-title: Welcome
+title: My Digital Garden
 ---
 
 # Welcome!
@@ -29,10 +29,6 @@ If you are curious, check out some of the topics I have written about below or u
 * [Clean Code](Books/Clean%20Code.md)
 * [Elegant Objects](Books/Elegant%20Objects.md)
 * [Java Concurrency In Practice](Books/Java%20Concurrency%20In%20Practice.md)
-
-## Notes on Papers
-
-* [David Parker's Papers](Misc/David%20Parker's%20Papers.md)
 
 ## 🎥 YouTube Video Scripts
 

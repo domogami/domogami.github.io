@@ -3,12 +3,8 @@ public
 resources
 .idea
 content/.obsidian
-assets/indices/linkIndex.json
-assets/indices/contentIndex.json
-.DS_Store
 .gitignore
 node_modules
-public
 prof
 tsconfig.tsbuildinfo
 .obsidian
