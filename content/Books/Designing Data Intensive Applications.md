@@ -126,5 +126,7 @@ Operations teams should
 
 Thoughts: I've been warned about over abstracting and I'm curious whether this is a good use of an abstraction. Wouldn't it be better to try to simplify the complex behavior to make it more understandable with helper functions/microservices rather than abstracting?
 
-Referring to this section:
-\>“One of the best tools we have for removing accidental complexity is abstraction. A good abstraction can hide a great deal of implementation detail behind a clean, simple-to-understand façade. A good abstraction can also be used for a wide range of different applications. Not only is this reuse more efficient than reimplementing a similar thing multiple times, but it also leads to higher-quality software, as quality improvements in the abstracted component benefit all applications that use it.”
+Referring to this section
+
+ > 
+ > “One of the best tools we have for removing accidental complexity is abstraction. A good abstraction can hide a great deal of implementation detail behind a clean, simple-to-understand façade. A good abstraction can also be used for a wide range of different applications. Not only is this reuse more efficient than reimplementing a similar thing multiple times, but it also leads to higher-quality software, as quality improvements in the abstracted component benefit all applications that use it.”
