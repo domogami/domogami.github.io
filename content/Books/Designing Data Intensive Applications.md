@@ -109,7 +109,6 @@ The naïve way to calculate response times over a given period of time is to kee
 * Evolvability: Make it easy for engineers to change the system and adapt it to new use cases
 
  > 
- > \[!quote\] 
  > “good operations can often work around the limitations of bad (or incomplete) software, but good software cannot run reliably with bad operations”
 
 Operations teams should
