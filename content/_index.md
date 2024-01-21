@@ -9,7 +9,6 @@ Welcome to my digital garden! This is my continuously growing personal wiki wher
 If you are curious, check out some of the topics I have written about below or use the interactive graph at the bottom of the page to navigate. If you'd like to visit my personal website written with Remix, visit [dominicklee.net](https://dominicklee.net)
 
  > 
- > \[!quote\] 
  > “Your mind is for having ideas, not holding them.” 
  > -David Allen
 
