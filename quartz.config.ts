@@ -9,8 +9,8 @@ const config: QuartzConfig = {
     analytics: {
       provider: "plausible",
     },
-    baseUrl: "quartz.jzhao.xyz",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    baseUrl: "domogami.github.io",
+    ignorePatterns: ["private", "templates", ".obsidian", "Personal"],
     defaultDateType: "created",
     theme: {
       typography: {

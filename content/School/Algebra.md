@@ -6,6 +6,8 @@ tags:
 
 # Math 103A
 
+Sadly this markdown version does not render perfectly and it would take way too much work to port it over from the original notion source. Please refer to: the [Notion version of this text](https://www.notion.so/domogami/Math-103B-9b206bad0f60490e9dfaaa1b14842365?pvs=4)
+
 ### Monoid
 
 A monoid has two properties,
@@ -67,14 +69,14 @@ A group with Communativity is an Abelian Group
     3 & 0
     \\end{pmatrix}$$
   * Identity Element is the identity matrix
-* $(f:\mathbb{R}\mathbb{R}ightarrow\mathbb{R}, +)$ - **Abelian Group**
+* $(f:\mathbb{R} \implies \mathbb{R}, +)$ - **Abelian Group**
   * $(f+g)(x) = f(x) + g(x)$
-* $(f:\mathbb{R}\mathbb{R}ightarrow\mathbb{R}, \cdot)$ - **Monoid**
+* $(f:\mathbb{R} \implies \mathbb{R}, \cdot)$ - **Monoid**
   * $(f\cdot g)(x) = f(x)g(x)$
   * Identity Element: $f(x)=1$
-  * $f(x)=0$ is not invertable
+  * $f(x)=0$ is not invertible
   * Invertible elements have no roots (do not intersect x axis)
-* $(f:\mathbb{Z}\mathbb{R}ightarrow\mathbb{R}, \circ)$ - Monoid
+* $(f:\mathbb{Z} \implies \mathbb{R}, \circ)$ - Monoid
   * Not invertible, $f(x) = x^2$ is not invertible (Must be bijective)
 
 # Rings
@@ -315,11 +317,9 @@ Therefore $(U(R),\ \cdot)$ is a group. (Associativity of ⋅is ensured by the fa
 
 1. $R=\mathbb{R}, \mathbb{C}, \mathbb{Q}$ 
    $R^x=R\backslash {0}$
-
-$$ \mathbb{R}^x=\mathbb{R}\backslash{0} \\
-\\mathbb{C}^x=\mathbb{C}\backslash{0} \\
-\\mathbb{Q}^x=\mathbb{Q}\backslash{0} \\ $$
-
+   $$ \mathbb{R}^x=\mathbb{R}\backslash{0} \\
+   \\mathbb{C}^x=\mathbb{C}\backslash{0} \\
+   \\mathbb{Q}^x=\mathbb{Q}\backslash{0} \\ $$
 1. $R= \mathbb{Z}$ (What are the units in the ring of integers)
    $R^x= {±1}$ 
    $\mathbb{Z} \subset \mathbb{Q}$ ← (Every nonzero element of $\mathbb{Z}$ is invertible in $\mathbb{Q}$)
@@ -343,28 +343,14 @@ $\mathbb{Z}\_n^x=\mathbb{Z}\_n\backslash {0} \Longleftrightarrow$  $n$ is prime
 The units of the Integers mod n is equal to the integers up to n excluding zero if n is a prime number
 
 **Question:** How to invert mod n?
-
-````
 $$17^{-1}(mod\ 48)=\ ? $$
-````
-
-$17,\ 48$ are coprime
-
-````
+$17,\ 48$ are coprime 
 $$ (48,17) = (17, \mathbf{14} ) = (14, 3)=(3,2)=(2,1) $$
-````
-
 $48=2\cdot 17 +14$ ← $\mathbf{14}$ is the “Residue”
-
 $17=1\cdot 14 +\mathbf{3}$
-
 $14=4\cdot 3 + \mathbf{2}$
-
 $3=1\cdot 2 + \mathbf{1}$ ← Once we have 1, we now invert
-
-````
 $1=3-2= 3-(14-4\cdot3)=-14+5\cdot 3=-14+5(17-14)=-6\cdot14+5\cdot 17=-6\cdot (48-2\cdot 17)+5\cdot 17=-6\cdot 48+17\cdot 17$
-````
 
 So, $17 \cdot 17 = 1(mod\ 48)$ so, $17^{-1}=17$ in $\mathbb{Z}\_{48}$
 

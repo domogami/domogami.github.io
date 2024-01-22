@@ -1,5 +1,0 @@
----
-title: Microservices Patterns
----
-
-

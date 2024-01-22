@@ -1,5 +1,4 @@
 baseURL = "https://domogami.github.io/"
-# baseURL = "https://localhost:8000/"
 languageCode = "en-us"
 # googleAnalytics = "G-XYFD95KB4J"
 relativeURLs = false
