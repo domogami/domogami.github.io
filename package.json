@@ -1,15 +1,15 @@
 {
-  "name": "@jackyzha0/quartz",
-  "description": "🌱 publish your digital garden and notes as a website",
-  "private": true,
+  "name": "Dom's Digital Garden",
+  "description": "🌱 A garden of my thoughts and notes",
+  "private": false,
   "version": "4.1.4",
   "type": "module",
-  "author": "jackyzha0 <j.zhao2k19@gmail.com>",
+  "author": "Dominick Lee <domogami@gmail.com>",
   "license": "MIT",
-  "homepage": "https://quartz.jzhao.xyz",
+  "homepage": "https://domogami.github.io",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jackyzha0/quartz.git"
+    "url": "https://github.com/domogami/domogami.github.io"
   },
   "scripts": {
     "docs": "npx quartz build --serve -d docs",

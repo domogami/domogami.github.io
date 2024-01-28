@@ -1,5 +1,5 @@
 ---
-title: My Digital Garden
+title: "Dom's Digital Garden"
 ---
 
 # Welcome!
