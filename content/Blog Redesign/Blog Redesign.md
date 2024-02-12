@@ -1,5 +1,5 @@
 ---
-title: Blog
+title: Blog Redesign
 tags:
   - Blog
 ---
