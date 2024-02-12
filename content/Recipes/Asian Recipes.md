@@ -26,6 +26,3 @@ Soy sauce 1tsp dark
 Oyster sauce
 2 tsp Corn starch
 Sugar salt and msg
-
-Indian store
-Saagar groceries
