@@ -15,7 +15,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     baseUrl: "domogami.github.io",
-    ignorePatterns: ["private", "templates", ".obsidian", "Personal"],
+    ignorePatterns: ["private", "templates", ".obsidian", "Personal", "00 - Personal"],
     defaultDateType: "created",
     theme: {
       fontOrigin: "googleFonts",

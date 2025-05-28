@@ -6,6 +6,10 @@ title: Automating Obsidian Publish
 
 To make it easier for me to keep my website up to date with my personal vault, I needed to automate the publish process. Below is a script I can trigger from RayCast in order to quickly update my website with a simple trigger and confirmation key.
 
+ > 
+ > \[!note\] Excluded Files
+ > To exclude files and directories, check the `.export-ignore` file in the root of the vault. That is respected by obsidian export
+
 ````bash
 #!/bin/bash
 

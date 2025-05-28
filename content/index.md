@@ -20,7 +20,9 @@ If you are curious, check out some of the topics I have written about below or u
 
 ## 👨‍🍳 Recipes
 
-* [Breakfast](Recipes/Breakfast.md)
+* [Overnight Oats](Overnight%20Oats.md)
+* [Egg Noodle Soup](Egg%20Noodle%20Soup.md)
+* [Buttermilk Pancakes](Buttermilk%20Pancakes.md)
 * [Asian Recipes](Recipes/Asian%20Recipes.md)
 * [Shin Ramen](Recipes/Shin%20Ramen.md)
 * [Prime Rib](Recipes/Prime%20Rib.md)

@@ -235,6 +235,16 @@ This is similar to dynamic runtime type checking vs static compile time type che
 
 # Chapter 3
 
+This chapter will discuss storage engines and compare log-structured vs page-oriented storage engines.
+
 ## Data Structures That Power Your Database
 
-* 
+ > 
+ > The word *log* is often used to refer to application logs, where an application outputs text that describes what's happening
+
+* Simple storage: Key Value pairs that are written in an append only log. Writes are fast because appending is quick and no updates are made. Retrieval searches for the latest key in O(n) time. If the number of records n doubles then it takes twice as long. To make finding values more efficient we use an *index*.
+
+ > 
+ > Def: An index is an additional structure that is derived from the primary data
+
+Indexes can be added and removed and they don't affect the contents of the database, just the performance of queries. Although they add overhead especially on writes.
