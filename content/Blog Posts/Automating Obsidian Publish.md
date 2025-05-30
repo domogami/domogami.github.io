@@ -14,8 +14,8 @@ To make it easier for me to keep my website up to date with my personal vault, I
 #!/bin/bash
 
 # Remove Old Files
-trash /Users/dom/Documents/GitHub/obsidian-site/quartz/content/*
-trash /Users/dom/Documents/GitHub/obsidian-site/quartz/public/*
+rm -rf /Users/dom/Documents/GitHub/obsidian-site/quartz/content/*
+rm -rf /Users/dom/Documents/GitHub/obsidian-site/quartz/public/*
 
 # Export my Obsidian Vault to the GitHub content folder
 /Users/dom/Documents/GitHub/obsidian-site/obsidian-export/target/debug/obsidian-export --frontmatter=always ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Dom\'s\ 2nd\ Brain/ /Users/dom/Documents/GitHub/obsidian-site/quartz/content

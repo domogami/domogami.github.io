@@ -5,6 +5,7 @@ relativeURLs = false
 disablePathToLower = true
 ignoreFiles = [
     "/content/Personal/*",
+    "/content/00 - Personal/*",
 ]
 summaryLength = 30
 paginate = 30

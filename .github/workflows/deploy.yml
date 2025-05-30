@@ -1,4 +1,4 @@
-name: Deploy Quartz 4.0 site to GitHub Pages
+name: Deploy Quartz 4 site to GitHub Pages
  
 on:
   push:
