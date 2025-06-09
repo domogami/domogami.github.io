@@ -95,15 +95,10 @@ $$\kappa = \frac{|\alpha' \times \alpha''|}{v^3} \\
 Definitions:
 
 * ****Regular**** mapping $x: D \rightarrow \R^3 $ if $x_u \times x_v \neq 0\ \forall\ u, v\in D$
-
 * ****Coordinate Patch:**** is a one-to-one mapping x of some open set D in $\mathbb{R}^2$ into $\mathbb{R}^3$
-
 * ****Surface:**** A ⊂ M of $\mathbb{R}^3$ such that each point of M has a neighborhood in M that is contained in the image of some patch
-
 * ****Atlas:**** A collection of patches whose images cover all of M
-
 * Curves with constant u on M are called Parallels
-
 * Curves with constant v on M are called Meridians
 
 ### Implicit Function Theorem

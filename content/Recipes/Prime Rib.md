@@ -1,5 +1,7 @@
 ---
 title: Prime Rib
+tags:
+  - BlogPost
 ---
 
 # General notes when cooking with Dad

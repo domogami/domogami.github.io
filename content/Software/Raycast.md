@@ -6,7 +6,7 @@ tags:
 
 # Overview
 
-[Raycast](https://www.raycast.com/) is a software that I use to replace the default MacOS spotlight search. By replacing `cmd + SPACE` with Raycast, I can quickly open the application that appears as a floating text input. In this input, I can quickly do quick math calculations, add an emoji, open an application, grab something from my clipboard history, and run bash scripts. I used to use [Alfred](https://www.alfredapp.com/) and I bought a lifetime membership, but after trying out Raycast I can say for certain that Raycast is cleaner, faster, and more extensible than Alfred was. Raycast also has a significantly larger selection of 3rd party integrations which makes it more useful as a general purpose tool.
+[Raycast](https://www.raycast.com/) is a software that I use to replace the default [MacOS](MacOS.md) spotlight search. By replacing `cmd + SPACE` with Raycast, I can quickly open the application that appears as a floating text input. In this input, I can quickly do quick math calculations, add an emoji, open an application, grab something from my clipboard history, and run bash scripts. I used to use [Alfred](https://www.alfredapp.com/) and I bought a lifetime membership, but after trying out Raycast I can say for certain that Raycast is cleaner, faster, and more extensible than Alfred was. Raycast also has a significantly larger selection of 3rd party integrations which makes it more useful as a general purpose tool.
 
 ## Raycast vs Alfred
 

@@ -1,5 +1,7 @@
 ---
 title: Learning Manim
+tags:
+  - BlogPost
 ---
 
 ## An Undergraduate Math Proof

@@ -1,7 +1,7 @@
 ---
 title: Clean Code
 tags:
-  - Code
+  - Books
 ---
 
 # Introduction

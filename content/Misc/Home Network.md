@@ -1,56 +1,15 @@
 ---
-title: Automating Obsidian Publish
+title: Home Network
 ---
 
-## Script
+# Where it started
 
-To make it easier for me to keep my website up to date with my personal vault, I needed to automate the publish process. Below is a script I can trigger from RayCast in order to quickly update my website with a simple trig\[[]()\]()ger and confirmation key.
+One day while on a call with my Watch Party coworker Creed, I started chatting about what he used to do for a living before he became a Software Engineer. He told me that he worked as a network engineer for a school district and then he walked me through some of the crazy parts of his personal home setup. He had a firewall setup with a [firewalla](https://firewalla.com/) and he had a [Ubiquiti](https://www.ui.com/) setup which absolutely inspired me to assemble my own sick setup. 
 
-````bash
-#!/bin/bash
+## My Lil NAS
 
-# Remove Old Files
-trash /Users/dom/Documents/GitHub/obsidian-site/quartz/content/*
-trash /Users/dom/Documents/GitHub/obsidian-site/quartz/public/*
+The [NAS](../Software/Networking/NAS.md) has 16TB of storage in [RAID 1](../Software/RAID%201.md) for redundancy. This is mostly intended for my parents to have enough storage for family photos and shared files. The rule I am following is to imagine how much storage you might ever need and then multiply that number by 5. Because my family has always hovered a little under 1TB per month with iCloud Drive, I felt like 16TB would fit my parent's needs for now.
 
-# Export my Obsidian Vault to the GitHub content folder
-/Users/dom/Documents/GitHub/obsidian-site/obsidian-export/target/debug/obsidian-export --frontmatter=always ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Dom\'s\ 2nd\ Brain/ /Users/dom/Documents/GitHub/obsidian-site/quartz/content
+## Ubiquiti Modem + Router
 
-# Compile Quartz Site
-cd /Users/dom/Documents/GitHub/obsidian-site/quartz
-npx quartz build
-
-# Save today's date for the commit name
-date=$(date '+%m-%d-%Y')
-
-# Output current changed files
-OUTPUT="$(git status)"
-echo "${OUTPUT}"
-
-# A helper function to ask for confirmation
-asksure() {
-	echo -n "Are you sure (Y/N)? "
-	while read -r -n 1 -s answer; do
-	  if [[ $answer = [YyNn] ]]; then
-	    [[ $answer = [Yy] ]] && retval=0
-	    [[ $answer = [Nn] ]] && retval=1
-	    break
-	  fi
-	done
-	
-	echo # just a final linefeed, optics...
-	
-	return $retval
-}
-
-if asksure; then
-	# Publish!
-	git add .
-	git commit -m "✨ [FEAT] $date Update"
-	git push
-	
-	echo "Published! 🚀"
-else
-	echo "Aborting! ❌"
-fi
-````
+Because I am using non-fiber internet, I actually require a Modem to get internet from Xfinity (rebranded Comcast).

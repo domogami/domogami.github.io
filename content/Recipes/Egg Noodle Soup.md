@@ -1,5 +1,7 @@
 ---
 title: Egg Noodle Soup
+tags:
+  - Cooking
 ---
 
 ## Ingredients

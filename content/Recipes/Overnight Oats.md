@@ -1,7 +1,7 @@
 ---
 title: Overnight Oats
 tags:
-  - Blog
+  - Cooking
 ---
 
 ## Overnight Oats (Half)

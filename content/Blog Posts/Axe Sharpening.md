@@ -1,5 +1,7 @@
 ---
 title: Axe Sharpening
+tags:
+  - BlogPost
 ---
 
 ## 🌲🪓

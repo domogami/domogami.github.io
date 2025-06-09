@@ -18,5 +18,5 @@ npm install
 I often have issues related to multiple projects using multiple versions of node. To make switching between Node Version 14 to Node Version 18 and then to 21, I use [NVM (Node Version Manager)](https://github.com/nvm-sh/nvm) to quickly switch my version of Node.js
 
 ````shell
-nvm use 21
+nvm use 22
 ````

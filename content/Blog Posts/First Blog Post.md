@@ -1,7 +1,7 @@
 ---
 title: My First Blogpost
 tags:
-  - Blog
+  - BlogPost
 ---
 
 # My First Blogpost
@@ -141,4 +141,4 @@ After all of this work, there is still so much left to do. I have yet to do the 
 * [ ] Better Post Query Support
 * [ ] Post Search Function
 
-However, despite this blog not being complete, I have already learned so much about not only Remix but also React in general and SCSS. I also got very distracted by my new obsession with neovim and ricing MacOS. The only thing left is to write some actual blogposts and it seems my first one is just about finished.
+However, despite this blog not being complete, I have already learned so much about not only Remix but also React in general and SCSS. I also got very distracted by my new obsession with neovim and ricing [MacOS](../Software/MacOS.md). The only thing left is to write some actual blogposts and it seems my first one is just about finished.

@@ -1,7 +1,7 @@
 ---
 title: Editor.js
 tags:
-  - blog
+  - Blog
 ---
 
 ## Editor.js

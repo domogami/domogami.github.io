@@ -1,5 +1,7 @@
 ---
 title: Mom’s Buttermilk Pancakes
+tags:
+  - Cooking
 ---
 
 ## Wet

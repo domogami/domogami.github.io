@@ -4,7 +4,7 @@ title: Yabai
 
 ## The Ultimate Tiling Window Manager
 
-Yabai is a MacOS tiling window manager that uses binary space partitioning which sub-divides the space in half. The first window you open is opened in full screen to take up all available space. The next window that is opened however shrinks the first window to the left 50% of the screen and the new window uses the remaining 50% (splitting the screen vertically). Similarly, when a third window is created the previously created window is divided in half (horizontally) and the previous window takes up the top 25% while the new window fills the bottom 25%. This process repeats until the window becomes so small as to not be practical.
+Yabai is a [MacOS](../Software/MacOS.md) tiling window manager that uses binary space partitioning which sub-divides the space in half. The first window you open is opened in full screen to take up all available space. The next window that is opened however shrinks the first window to the left 50% of the screen and the new window uses the remaining 50% (splitting the screen vertically). Similarly, when a third window is created the previously created window is divided in half (horizontally) and the previous window takes up the top 25% while the new window fills the bottom 25%. This process repeats until the window becomes so small as to not be practical.
 
 Something noteworthy about Yabai is that it prioritizes all windows in a space being shown at all times. By default no windows ever overlap (although some can be toggled to full screen) which means that the user is more conscious of which windows are open leading to less valuable windows being closed instead of falling to the back of the z-stack.
 
