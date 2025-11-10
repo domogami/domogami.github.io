@@ -1,7 +1,7 @@
 ---
 title: Shin Ramen
 tags:
-  - BlogPost
+  - Cooking
 ---
 
 ## My Favorite Instant Ramen

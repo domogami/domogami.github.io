@@ -8,7 +8,7 @@ To capture notes, I use [Obsidian](https://obsidian.md/) with a vault (directory
 
 ## Primary Editor
 
-I primarily use [Obsidian](https://obsidian.md/) with *Vim* keybindings to write and edit my notes but occasionally I will use *Neovim* with the [Obsidian Nvim Plugin](https://github.com/epwalsh/obsidian.nvim).
+I primarily use [Obsidian](https://obsidian.md/) with [Vim](../../Software/Vim.md) keybindings to write and edit my notes but occasionally I will use [Neovim](../../Software/Neovim.md) with the [Obsidian Nvim Plugin](https://github.com/epwalsh/obsidian.nvim).
 
 ## Github Pages
 

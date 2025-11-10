@@ -14,4 +14,4 @@ I have spent a significant amount of time optimizing my dotfiles which can be fo
 
 ## Key Dotfiles
 
-The most important settings that I want to persist from machine to machine are my `.zshrc` file which customizes my shell with nice things like appending necessary package locations to my $PATH, creating aliases for quick execution of commands, and setting my default editor *Neovim*. I also have an `aerospace.toml` file that lives in the `~/.config/` directory. This config holds my keybindings for [Aerospace](https://github.com/nikitabobko/AeroSpace) which I use as my primary [Window Manager](Window%20Manager.md).
+The most important settings that I want to persist from machine to machine are my `.zshrc` file which customizes my shell with nice things like appending necessary package locations to my $PATH, creating aliases for quick execution of commands, and setting my default editor [Neovim](../Software/Neovim.md). I also have an `aerospace.toml` file that lives in the `~/.config/` directory. This config holds my keybindings for [Aerospace](https://github.com/nikitabobko/AeroSpace) which I use as my primary [Window Manager](Window%20Manager.md).

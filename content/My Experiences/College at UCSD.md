@@ -18,7 +18,7 @@ After weighing the pros and cons of both UCSB and UCSD, I found that UCSD's stat
 
 ## Life at Revelle College
 
-// TODO - Revelle was pretty great
+// TODO - Revelle was pretty great. The first time I felt a true sense of independence.
 
 ## Overall Experience
 
