@@ -9,11 +9,14 @@ I have a single Obsidian Vault with personal and public notes hosted on iCloud D
 🔗 [Dom's Digital Garden 🪴](https://domogami.github.io)
 
 ## Prerequisites
+
 - Install [Node Version Manager](https://github.com/nvm-sh/nvm)
 
 ## How to develop locally
+
 ```shell
 nvm use 22
 npm install
 npx quartz build --serve --verbose
 ```
+

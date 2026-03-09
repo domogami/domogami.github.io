@@ -40,11 +40,3 @@ Hey, I'm Dom! Welcome to my [Digital Garden 🪴](Concepts/Digital%20Garden%20%F
 
 * [Designing Data Intensive Applications](Books/Designing%20Data%20Intensive%20Applications.md)
 * [Clean Code](Books/Clean%20Code.md)
-
-## Photos vs Artwork
-
-Photos are: 2,3,4,5,6,19,21,22,24,25
-Artwork is: 7,8,9,10,11,12,13,14,15,16,17,18,20,23,a1,a2
-
-A herald oncall once told me:
-It’s easier to hide behind 40 atrocities than a single incident
