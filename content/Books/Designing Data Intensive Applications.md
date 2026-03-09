@@ -247,4 +247,52 @@ This chapter will discuss storage engines and compare log-structured vs page-ori
  > 
  > Def: An index is an additional structure that is derived from the primary data
 
-Indexes can be added and removed and they don't affect the contents of the database, just the performance of queries. Although they add overhead especially on writes.
+Indexes can be added and removed and they don't affect the contents of the database, just the performance of queries. Although they add overhead especially on writes. The simplest write operation is appending.
+
+Every index slows down writes, so indexes are not normally done by default. You need to choose an index that makes the most sense.
+
+### Hash Indexes
+
+One great use of a hash index would be for video views for a particular URL, there are many writes per video to update the view count but not very many keys (unique videos), so the keys could be held entirely in memory.
+
+Append only logs generally only have one writer thread to avoid concurrency.
+
+If a crash happens where a value is partially written and then joined with a new value isn't a problem in an append only log
+
+If you have a large number of keys and there's no way to keep it in memory then a Hash Table might not be best. Also range queries are not efficient. You cannot easily scan all keys between two values.
+
+### SSTables and LSM-Trees
+
+Sorted String Table (SSTable)
+
+* Each key only appears once (this is ensured by compaction)
+* In the merging operation, sort the keys
+* Always keep the most recent values and then discard old ones after merge
+* Groups of sorted indexes can be compacted into blocks to save disk space. Then only the start of each compressed block is stored in memory
+  How do we get our data to be sorted by key? Writes can happen in any order.
+  The solution: B-Trees, AVL Trees, and Red-Black trees can be easily written to and then read in sorted order. We can maintain them in memory.
+
+When a write comes in, add it to a balanced tree. (in memory tree can be called a "memtable").
+
+* When the memtable grows grows past a certain threshold like a few megabytes, write it to disk as an SSTable file. Values are already sorted. Then the SSTable is the most recent segment, writes can continue to a new memtable instance
+* For read requests, check the in memory memtable, then the on-disk segment, then the next older segment.
+
+The biggest flaw is that in the event of a crash, the in memory table will be lost. For this, we use an append only log (this will not be sorted but it's only purpose is for crash recovery). This log can be discarded after every write to disk
+
+Log Structure Merge Tree - this was the original name (LSM for short)
+
+A bloom filter can approximate the content in a set and save unnecessary disk reads when the key does not exist.
+
+### B-Tree
+
+Almost all relational databases use a B-Tree. B Trees break the database into 4kb pages/blocks. Pages are identified with an address like a pointer but for files. One page is the root that contain several child pages. A B-tree with n keys always has a depth of O(log n). A four level tree of 4kb pages with a branching factor of 500 can store up to 256 TB.
+
+Write Ahead Logs are used to recover from a crash. Modifications must be made to the write ahead log first and then the actual update can be applied to the tree. If a crash happens, the Write Ahead Log  (WAH) is used to restore the tree to a consistent state.
+
+Latches/locks are used for concurrency protection to ensure multiple threads to not overwrite data and cause an inconsistent state.
+
+LSM trees are faster for writes, B-Trees are faster for reads
+
+B-Trees have to write twice, once to the WAL and once to the actual Disk. Write amplification can cause issues with SSDs, as the bits can only be used so many times. 
+
+LSM trees can be compressed better.

@@ -4,7 +4,7 @@ title: "Dom's Digital Garden"
 
 # Welcome!
 
-Welcome to my [Digital Garden 🪴](Concepts/Digital%20Garden%20%F0%9F%AA%B4.md)! This is my continuously growing personal wiki where I write about things that I learn and my experiences throughout my journey as a Software Engineer. If you are curious why I chose Obsidian, take a look at [Why Obsidian?](Why%20Obsidian?.md)
+Hey, I'm Dom! Welcome to my [Digital Garden 🪴](Concepts/Digital%20Garden%20%F0%9F%AA%B4.md)! This is my continuously growing personal wiki where I write about things that I learn and my experiences throughout my journey as a Software Engineer. If you are curious why I chose Obsidian, take a look at [Why Obsidian?](Why%20Obsidian?.md)
 
  > 
  > \[!quote\]  Your mind is for having ideas, not holding them. -David Allen
@@ -41,8 +41,10 @@ Welcome to my [Digital Garden 🪴](Concepts/Digital%20Garden%20%F0%9F%AA%B4.md)
 * [Designing Data Intensive Applications](Books/Designing%20Data%20Intensive%20Applications.md)
 * [Clean Code](Books/Clean%20Code.md)
 
-## 👨‍🏫 Notes from Undergrad
+## Photos vs Artwork
 
-* [Abstract Algebra 1](School/Algebra.md)
-* [Abstract Algebra 2](School/103B.md)
-* [Geometry](School/Geometry.md)
+Photos are: 2,3,4,5,6,19,21,22,24,25
+Artwork is: 7,8,9,10,11,12,13,14,15,16,17,18,20,23,a1,a2
+
+A herald oncall once told me:
+It’s easier to hide behind 40 atrocities than a single incident
