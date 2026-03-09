@@ -20,3 +20,10 @@ npm install
 npx quartz build --serve --verbose
 ```
 
+Quartz 4.5.2 requires Node 22 or newer.
+
+If `npm install` fails while compiling `sharp` and mentions `libvips` or `node-gyp`, your machine is probably picking up a global `libvips` install. In that case, rerun the install with:
+
+```shell
+SHARP_IGNORE_GLOBAL_LIBVIPS=1 npm install
+```
