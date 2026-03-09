@@ -9,10 +9,13 @@ html {
   text-size-adjust: none;
   overflow-x: hidden;
   width: 100vw;
+
+  @media all and ($mobile) {
+    scroll-padding-top: 4rem;
+  }
 }
 
-body,
-section {
+body {
   margin: 0;
   box-sizing: border-box;
   background-color: var(--light);
@@ -40,23 +43,17 @@ li,
 ol,
 ul,
 .katex,
-.math {
+.math,
+.typst-doc,
+g[class~="typst-text"] {
   color: var(--darkgray);
   fill: var(--darkgray);
-  hyphens: auto;
+  overflow-wrap: break-word;
+  text-wrap: pretty;
 }
 
-p,
-ul,
-text,
-a,
-li,
-ol,
-ul,
-.katex,
-.math {
-  overflow-wrap: anywhere;
-  /* tr and td removed from list of selectors for overflow-wrap, allowing them to use default 'normal' property value */
+path[class~="typst-shape"] {
+  stroke: var(--darkgray);
 }
 
 .math {
@@ -132,16 +129,32 @@ a {
   }
 }
 
+.flex-component {
+  display: flex;
+}
+
 .desktop-only {
   display: initial;
+  &.flex-component {
+    display: flex;
+  }
   @media all and ($mobile) {
+    &.flex-component {
+      display: none;
+    }
     display: none;
   }
 }
 
 .mobile-only {
   display: none;
+  &.flex-component {
+    display: none;
+  }
   @media all and ($mobile) {
+    &.flex-component {
+      display: flex;
+    }
     display: initial;
   }
 }
@@ -206,7 +219,7 @@ a {
     }
 
     & .sidebar {
-      gap: 2rem;
+      gap: 1.2rem;
       top: 0;
       box-sizing: border-box;
       padding: $topSpacing 2rem 2rem 2rem;
