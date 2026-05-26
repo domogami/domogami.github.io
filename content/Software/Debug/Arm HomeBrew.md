@@ -6,7 +6,7 @@ title: Arm HomeBrew
 
 To help prevent avoid some issues with incompatibilities I actually have two terminals, one ARM copy that I downloaded from the iTerm2 website and another that I made by right clicking on the application and selecting "Get Info", then select "Open Using Rosetta"
 
-![iTermRosetta.png](../Images/iTermRosetta.png)
+![iTermRosetta.png](../../Images/iTermRosetta.png)
 
 ## QMK Issues
 

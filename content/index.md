@@ -14,6 +14,7 @@ Hey, I'm Dom! Welcome to my [Digital Garden 🪴](Concepts/Digital%20Garden%20%F
 * [sudo whoami](Concepts/sudo%20whoami.md)
 * [College at UCSD](My%20Experiences/College%20at%20UCSD.md)
 * [Working at Amazon](My%20Experiences/Working%20at%20Amazon.md)
+* [Quotes I love](My%20Experiences/Quotes%20I%20love.md)
 
 ## ✍️ Blog Posts
 
