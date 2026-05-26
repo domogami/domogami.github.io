@@ -4,6 +4,10 @@ tags:
   - BlogPost
 ---
 
+## My Dotfiles
+
+* https://github.com/domogami/.dotfiles
+
 # What are Dotfiles?
 
 Dotfiles are config files that start with a dot (period character) and are hidden on most operating systems by default. They store the user's configuration and settings and these files can be saved and stored to quickly import your custom settings when you transition to a new computer. Examples of common dotfiles include `.zshrc`,  `.vimrc`, and on [MacOS](../Software/MacOS.md) there is generally a `.config/` directory that stores even more config files for different software applications.
@@ -15,3 +19,17 @@ I have spent a significant amount of time optimizing my dotfiles which can be fo
 ## Key Dotfiles
 
 The most important settings that I want to persist from machine to machine are my `.zshrc` file which customizes my shell with nice things like appending necessary package locations to my $PATH, creating aliases for quick execution of commands, and setting my default editor [Neovim](../Software/Neovim.md). I also have an `aerospace.toml` file that lives in the `~/.config/` directory. This config holds my keybindings for [Aerospace](https://github.com/nikitabobko/AeroSpace) which I use as my primary [Window Manager](Window%20Manager.md).
+
+## When I get a new Mac
+
+When I get a new mac I can pull my dotfiles repo and run the install scripts to create symlinks between the maintained config dotfiles and the local dotfiles in the correct location on my Mac.
+
+### Instantly make the doc appear
+
+````
+# No Auto Hide 
+defaults write com.apple.dock autohide-delay -float 0 && killall Dock
+
+# No Auto Hide and No Slide In
+defaults write com.apple.dock autohide-delay -float 0 && defaults write com.apple.dock autohide-time-modifier -float 0 && killall Dock
+````

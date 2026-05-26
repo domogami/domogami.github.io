@@ -3,8 +3,6 @@
 
 # 🧠 HTTP Methods & Status Codes — Cheatsheet
 
-![HTTP Diagram](https://cdn.pixabay.com/photo/2015/08/04/20/26/http-875181_960_720.png)
-
 ---
 
 ## 🚀 Most Commonly Used HTTP Methods

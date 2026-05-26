@@ -4,7 +4,7 @@ tags:
   - Cooking
 ---
 
-# Taught by my old roommate
+# Taught by my old roommate Garrett
 
 ### Braised tofu
 

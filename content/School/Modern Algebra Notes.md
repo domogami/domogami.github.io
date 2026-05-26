@@ -30,9 +30,7 @@ A Group is a Monoid with Inverses
 A group with Communativity is an Abelian Group
 
 * ${\bf{Commutativity}}: \forall x,y\in G: x\cdot y = y\cdot x$
-
-**Examples:**
-
+  **Examples:**
 * $(\mathbb{Z}, +)$ - **Abelian Group**
 * $(\mathbb{Z}, \cdot)$ - **Monoid** (Abelian Monoid because $n\cdot m = m \cdot n$)
   * 0 is not invertible
@@ -104,25 +102,16 @@ A subset $S \subseteq R$ is a subring if it is closed under $+,\cdot$ and
 * $1 \in S$
 
 **Remark:** We also know $0 \in S$. Since $1 \in S$, so $-1 \in S$ 
-
 **Example:**
 
 1. $\mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \mathbb{C}$ are subrings!
-
 1. $Z_n = {0,1,\cdots, n-1} \subset \mathbb{Z}={\cdots,\ -1,\ 0,\ 1, \cdots }$
-   
    $0-1 = -1 \notin \mathbb{Z}\_n$ not a subring
-
 1. $\mathbb{Z}\[\\sqrt{2}\] = {a+b\sqrt{2}\ |\ a, b \in \mathbb{Z} } \subset \mathbb{R}$
-   
    Subring test: $1=1+0\sqrt2 \in \mathbb{Z}\[\\sqrt2\]$
-   
    Multiplication: $(a+b\sqrt2)(c+d\sqrt2) = ac+ad\sqrt2+b\sqrt2c+ b\sqrt2\cdot d\sqrt2 = (ac+2bd)+(ad+bc)\sqrt2 \in \mathbb{Z}\[\\sqrt2\]$
-   
    Subtraction: $(a+b\sqrt2)-(c+d\sqrt2)=(a-c)+(b-d)\sqrt2 \in Z\[\\sqrt2\]$
-   
    $\therefore \mathbb{Z}\[\\sqrt2\] \subset \mathbb{R}$ it is a subring!
-
 1. $\mathbb{Z}\[i\] = {\ a+bi\ |\ a,b\in\mathbb{Z}} \subset \mathbb{C}$ - Gaussian Integers (subring)
 
 Remark: “lines are transitive” in this diagram, namely, if $S\subseteq R$ is a subring and $T\subseteq S$ is a subring, then $T \subseteq R$ is a subring
@@ -140,11 +129,8 @@ Remark: “lines are transitive” in this diagram, namely, if $S\subseteq R$ is
 ### Polynomial Rings
 
 “Polynomial Ring over R” $\Longleftrightarrow \ R\[x\]$
-
 $R\[x\] = {r_0+r_1x+r_2x^2+\cdots+r_nx^n\ |\ r_0,\cdots,r_n\in \mathbb{R}}$
-
 **Polynomial Addition Formula**
-
 $$
 r_0+r_1x+\cdots+r_nx^n \\
 s_0+s_1x+\cdots+s_mx^m \\
@@ -153,7 +139,6 @@ s_0+s_1x+\cdots+s_mx^m \\
 $$
 
 **Polynomial Multiplication Formula**
-
 $$
 p(x)=\sum\_{i=0}^n r_ix^i=r_0+r_1x+\cdots+r_nx^n \\
 q(x)=\sum\_{j=0}^m s_jx^j=rs_0+s_1x+\cdots+s_mx^m \\
@@ -162,9 +147,7 @@ p(x)\cdot q(x)=(r_0+r_1x+\cdots+r_nx^n )\cdot(s_0+s_1x+\cdots+s_mx^m) \\
 = (\sum\_{i=0}^n r_ix^i)(\sum\_{j=0}^m s_jx^j)\\
 = \sum\_{d=0}^{n+m}(\sum\_{i+j=d}r_is_j)x^d)
 $$
-
 **Remark:** $(R\[x\], +, \cdot)$ is a ring (assuming R is an arbitary ring)
-
 **Remark:** A ring is communitive if $x\cdot y = y \cdot x \ \forall \ x,y$
 
 * $\mathbb{Z},\ \mathbb{Q},\ \mathbb{R},\ \mathbb{C}$ - Commutative Rings
