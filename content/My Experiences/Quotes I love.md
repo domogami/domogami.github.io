@@ -27,6 +27,9 @@ A herald oncall once told me:
 ## Unknown Authors
 
  > 
+ > What a privilege to be tired from work you once begged the Universe for. What a privilege to feel overwhelmed by growth you used to dream about. What a privilege to be challenged by a life you created on purpose. What a privilege to outgrow things you used to settle for.
+
+ > 
  > There is no I in team but there are 3 u’s in shut the fuck up
 
  > 
