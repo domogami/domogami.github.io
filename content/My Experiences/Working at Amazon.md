@@ -2,7 +2,16 @@
 title: Working at Amazon
 tags:
   - amazon
+created: 2026-07-22
 ---
+
+# That Amazon Life
+
+At the time of writing this I have been working at Amazon Prime Video for 4 years. I have learned a tremendous amount about how great software is built and Amazon has shaped my view on what durable software looks like. I have learned to look beyond the code and at the long term impact of making decisions and the only way I was able to learn this was by making decisions and mistakes that taught me the consequences of my actions firsthand. 
+
+There's a lot not to like about Amazon, the work life balance, deadlines, expectations, processes, red tape, office politics, useless meetings, and performance reviews/stack ranking to name a handful of complaints. But overall there's a lot that people don't talk about as much that I have found extremely beneficial to my career. I've learned more at this job than 4 years of college by working directly with extremely talented and knowledgable people. There's something special about being surrounded by a group of people who are all intellectually curious and willing to put in hard work to engineer solutions that really do make me smile or exclaim "ohhh!" I love seeing the side projects that my coworkers work on and the dedication to optimization as a craft. I'm also paid to spend time learning and optimizing my own workflow to speed up my own productivity which fuels my abilities even outside of work.
+
+I revisited a project I had started in college with my newfound system design knowledge and I was able to create something truly magical that would have blown away college Dom. Being able to spin up a complex backend and create a fully end to end durable piece of software is something that does require years of practice and I feel like I gained most of my understanding passively while working at Amazon and attending/hosting design reviews, shipping software, and fixing operational outages (sometimes caused by my own code).
 
 # How it started
 

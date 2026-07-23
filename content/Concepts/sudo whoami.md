@@ -1,5 +1,6 @@
 ---
 title: sudo whoami
+created: 2025-09-20
 ---
 
 # Who Am I (2026)?
