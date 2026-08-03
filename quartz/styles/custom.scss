@@ -1,3 +1,24 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+// Keep Quartz 5 close to its defaults; only the two visual details that
+// cannot be expressed through quartz.config.yaml live here.
+:root:not([saved-theme="dark"]) {
+  --search-accent: #b86a2f;
+
+  pre {
+    background-color: color-mix(in srgb, var(--lightgray) 42%, var(--light));
+  }
+
+  .search > .search-button {
+    background-color: color-mix(in srgb, var(--search-accent) 7%, var(--light));
+    border-color: color-mix(in srgb, var(--search-accent) 55%, var(--light));
+
+    &:hover,
+    &:focus-visible {
+      background-color: color-mix(in srgb, var(--search-accent) 12%, var(--light));
+      border-color: var(--search-accent);
+      box-shadow: 0 0 0 3px color-mix(in srgb, var(--search-accent) 20%, transparent);
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,4 @@
+---
+---
+
+https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol
