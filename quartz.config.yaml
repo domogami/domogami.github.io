@@ -23,7 +23,8 @@ configuration:
       code: IBM Plex Mono
     colors:
       lightMode:
-        light: "#fbf7ef"
+        # Soft cream blended toward the inspiration palette's #DCC9A9.
+        light: "#f0e7d7"
         lightgray: "#e2d6c5"
         gray: "#776b5f"
         darkgray: "#554a42"
