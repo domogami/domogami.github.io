@@ -93,6 +93,11 @@ export default (() => {
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />
 
+        <script
+          dangerouslySetInnerHTML={{
+            __html: 'localStorage.getItem("theme") ?? localStorage.setItem("theme", "dark")',
+          }}
+        />
         {css.map((resource) => CSSResourceToStyleElement(resource, true))}
         {js
           .filter((resource) => resource.loadTime === "beforeDOMReady")
