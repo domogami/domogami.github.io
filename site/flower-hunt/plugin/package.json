@@ -1,0 +1,22 @@
+{
+  "name": "@domlee/quartz-flower-hunt",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "quartz": {
+    "name": "flower-hunt",
+    "displayName": "Flower Hunt",
+    "description": "A configurable flower scavenger hunt that reveals unlisted garden paths",
+    "version": "1.0.0",
+    "quartzVersion": ">=5.0.0 <6.0.0",
+    "category": "emitter",
+    "defaultOrder": 90,
+    "defaultEnabled": true
+  }
+}

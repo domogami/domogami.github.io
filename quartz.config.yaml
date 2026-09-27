@@ -140,11 +140,40 @@ plugins:
     enabled: true
   - source: "@quartz-community/alias-redirects"
     enabled: true
-  - source: "@quartz-community/content-index"
+  - source: ./site/flower-hunt/plugin
     enabled: true
     options:
-      enableSiteMap: true
-      enableRSS: true
+      id: personal-growth-v1
+      hiddenPaths:
+        - my-experiences/open-personal-growth
+      destination: my-experiences/open-personal-growth
+      pieces:
+        - id: beginnings
+          page: my-experiences/college-at-ucsd
+          label: The beginnings petal
+          anchor: life-at-warren-college
+          afterParagraph: 1
+          message: A little something is growing here…
+        - id: making
+          page: my-experiences/working-at-amazon
+          label: The making petal
+          anchor: how-it-started
+          afterParagraph: 1
+        - id: change
+          page: my-experiences/watch-party
+          label: The change petal
+          anchor: why-this-features-matters-to-me
+          afterParagraph: 1
+        - id: curiosity
+          page: my-experiences/rabbit-holes
+          label: The curiosity petal
+          anchor: why-rabbit-holes-are-important-to-me
+          afterParagraph: 1
+          message: Follow your curiosity…
+        - id: light
+          page: influential-works/lighthouse-poem
+          label: The light petal
+          afterParagraph: 1
   - source: "@quartz-community/favicon"
     enabled: true
   - source: "@quartz-community/og-image"

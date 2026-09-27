@@ -49,6 +49,10 @@ After editing the custom components or browser scripts, rebuild their local plug
 
 The banner above also appears in link previews. Edit the portable [SVG source](quartz/static/garden-preview.svg), then run `npm run site:social-image` to regenerate the 1200 × 630 PNG. Commit both files; the README displays the same image at a compact 640px width.
 
+### Flower hunt
+
+The [Flower Hunt plugin](site/flower-hunt/README.md) adds a small scavenger hunt that reveals Open Personal Growth after collecting petals. Hidden paths and petal locations are configured in `quartz.config.yaml`. This hides ordinary discovery, not access to the publicly hosted files. The plugin and its editable SVG drawing code live in `site/flower-hunt/`, separate from Quartz core.
+
 ## Publishing
 
 Push site code changes to `v5`; GitHub Actions builds and deploys them. For notes, review and explicitly approve the changes in Quartz Syncer before publishing to `v5` → `content`. Building locally does not publish anything, and a successful push still needs a successful Pages deployment before the live site updates.

@@ -1,0 +1,239 @@
+/* Scoped to the hunt. Palette follows Quartz's active light, dark, or hybrid scope. */
+html:not([data-flower-unlocked]) [data-flower-hidden] {
+  display: none !important;
+}
+html:not([data-flower-unlocked]) body[data-flower-page] .center > :not(.flower-gate),
+html:not([data-flower-unlocked]) body[data-flower-page] .sidebar.right {
+  display: none !important;
+}
+html[data-flower-unlocked] .flower-gate {
+  display: none;
+}
+.flower-collector {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right));
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  z-index: 25;
+}
+.flower-collector > button {
+  display: block;
+  position: relative;
+  width: 64px;
+  height: 86px;
+  padding: 3px 5px 23px;
+  color: var(--dark);
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  cursor: pointer;
+}
+.flower-collector > button:disabled {
+  opacity: 1;
+  cursor: default;
+}
+.flower-count {
+  position: absolute;
+  bottom: 4px;
+  inset-inline: 0;
+  text-align: center;
+  font:
+    600 20px/1 var(--flower-handwriting, "Notebook Caveat"),
+    cursive;
+}
+.hunt-flower {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+.hunt-stem {
+  stroke: var(--secondary);
+  stroke-width: 2;
+  fill: color-mix(in srgb, var(--secondary) 16%, var(--light));
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.hunt-petal path {
+  stroke: var(--gray);
+  stroke-width: 1.7;
+  stroke-dasharray: 0.05 0.05;
+  opacity: 0.3;
+}
+.hunt-petal.found path {
+  fill: color-mix(in srgb, var(--tertiary) 35%, var(--light));
+  stroke: var(--tertiary);
+  stroke-dasharray: 1;
+  opacity: 1;
+}
+.hunt-heart {
+  fill: var(--light);
+  stroke: var(--secondary);
+  stroke-width: 2;
+}
+.hunt-ground {
+  stroke: var(--gray);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+}
+.flower-collector[data-complete] .hunt-heart {
+  fill: var(--secondary);
+}
+.flower-piece {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  width: fit-content;
+  max-width: 100%;
+  min-height: 52px;
+  margin: 1.25rem 0;
+  padding: 5px;
+  background: transparent;
+  border: 0;
+  border-radius: 12px;
+  cursor: pointer;
+  color: var(--secondary);
+  text-align: left;
+}
+.flower-piece[hidden] {
+  display: none;
+}
+.flower-piece svg {
+  width: 44px;
+  height: 50px;
+  flex: none;
+  transform: rotate(var(--petal-tilt, -8deg));
+  transition: transform 0.3s ease;
+  overflow: visible;
+  fill: color-mix(in srgb, var(--tertiary) 35%, var(--light));
+  stroke: var(--tertiary);
+  stroke-width: 2;
+}
+.flower-piece:hover svg {
+  transform: rotate(calc(var(--petal-tilt, -8deg) + 9deg)) translateY(-3px);
+}
+.flower-piece-note {
+  font:
+    500 1.35rem/1.2 var(--flower-handwriting, "Notebook Caveat"),
+    cursive;
+}
+:is(.flower-piece, .flower-flight) .petal-paper {
+  fill: color-mix(in srgb, var(--tertiary) 24%, var(--light));
+  stroke: var(--tertiary);
+  stroke-width: 1.7;
+  stroke-linejoin: round;
+}
+:is(.flower-piece, .flower-flight) :is(.petal-vein, .petal-pencil, .petal-spark) {
+  fill: none;
+  stroke: var(--tertiary);
+  stroke-width: 1.2;
+  stroke-linecap: round;
+}
+:is(.flower-piece, .flower-flight) .petal-pencil {
+  opacity: 0.45;
+}
+:is(.flower-piece, .flower-flight) .petal-spark {
+  stroke: var(--secondary);
+}
+.flower-piece:disabled {
+  cursor: default;
+  opacity: 0.65;
+  transform: none;
+}
+.flower-piece:focus-visible {
+  outline: 2px solid var(--secondary);
+  outline-offset: 5px;
+  border-radius: 12px;
+}
+/* Keep keyboard focus visible as ink on the drawing, without a box. */
+.flower-collector > button:focus-visible {
+  outline: none;
+}
+.flower-collector > button:focus-visible .hunt-ground {
+  stroke: var(--secondary);
+  stroke-width: 4;
+}
+.flower-collector > button:focus-visible .flower-count {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.flower-flight {
+  position: fixed;
+  pointer-events: none;
+  z-index: 100;
+  width: 35px;
+  height: 42px;
+}
+.flower-flight svg {
+  width: 100%;
+  height: 100%;
+  fill: var(--tertiary);
+  stroke: var(--secondary);
+  stroke-width: 2;
+}
+.flower-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+.flower-collector.is-blooming > button {
+  animation: flower-bloom 0.9s ease-out;
+}
+/* Ink each petal in sequence during the final bloom, whatever the piece count. */
+.flower-collector.is-blooming .hunt-petal.found path {
+  animation: flower-ink 0.6s ease-out both;
+  animation-delay: calc(var(--petal-index) * 45ms);
+}
+.flower-collector.is-collecting .hunt-petal.found path {
+  animation: flower-ink 0.6s ease-out;
+}
+@keyframes flower-bloom {
+  0% {
+    transform: scale(0.8) rotate(-12deg);
+  }
+  45% {
+    transform: scale(1.18) rotate(6deg);
+  }
+  75% {
+    transform: scale(0.98) rotate(-2deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes flower-ink {
+  from {
+    stroke-dashoffset: 1;
+    fill-opacity: 0;
+  }
+  to {
+    stroke-dashoffset: 0;
+    fill-opacity: 1;
+  }
+}
+@media (max-width: 600px) {
+  .flower-collector > button {
+    width: 50px;
+    height: 75px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .flower-collector *,
+  .flower-piece,
+  .flower-piece svg {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+@media print {
+  .flower-collector,
+  .flower-piece,
+  .flower-gate {
+    display: none !important;
+  }
+}
+html[data-flower-unlocked] [data-flower-locked] {
+  display: none !important;
+}
