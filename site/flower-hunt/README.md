@@ -53,12 +53,15 @@ Buttons work with mouse, touch, Enter, and Space. Progress is announced through 
 
 ```sh
 npm run site:flower-build
+npm run install-plugins
 npm run site:flower-test
 npx tsc --noEmit -p site/flower-hunt/tsconfig.json
 npm run site:build
 ```
 
 Commit `plugin/dist/` together with source changes; Quartz loads the local plugin package directly. The generator bundles browser code and styles into the plugin, so GitHub Actions does not need an extra build step. `hast-util-from-html` and `hast-util-to-html` provide structured HTML decoration.
+
+Regenerate the plugin index before type-checking, as CI does. The plugin preserves the community `ContentDetails` and `ContentIndexMap` types in its declaration export list, which Quartz's file tree imports through that generated index. The package's `types` entry supports Quartz's TypeScript module resolution.
 
 This plugin **replaces** the standard ContentIndex emitter using its public API. Keep `@quartz-community/content-index` installed but do not enable its emitter alongside Flower Hunt. To remove the hunt, disable this plugin and re-enable the normal ContentIndex emitter, then do a clean site build.
 

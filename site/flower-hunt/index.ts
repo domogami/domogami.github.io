@@ -1,4 +1,6 @@
 import { ContentIndex } from "@quartz-community/content-index"
+// Preserve the index types Quartz's generated plugin registry exposes to its file tree.
+export type { ContentDetails, ContentIndexMap } from "@quartz-community/content-index"
 import type { QuartzEmitterPlugin, QuartzComponent, FilePath } from "@quartz-community/types"
 import { mkdir, readFile, writeFile } from "node:fs/promises"
 import path from "node:path"

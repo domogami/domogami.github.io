@@ -38,7 +38,9 @@ await build({
 })
 await writeFile(
   root + "plugin/dist/index.d.ts",
-  'import type { QuartzEmitterPlugin } from "@quartz-community/types"\nexport interface HuntOptions { id: string; hiddenPaths: string[]; destination: string; pieces: { id: string; page: string; label: string; anchor?: string; afterParagraph?: number; message?: string }[] }\nexport declare const FlowerHunt: QuartzEmitterPlugin<HuntOptions>\n',
+  // Quartz discovers exports from a declaration export list, including the index types
+  // its file tree expects even when the standard ContentIndex emitter is disabled.
+  'import type { QuartzEmitterPlugin } from "@quartz-community/types"\nimport type { ContentDetails, ContentIndexMap } from "@quartz-community/content-index"\ninterface HuntOptions { id: string; hiddenPaths: string[]; destination: string; pieces: { id: string; page: string; label: string; anchor?: string; afterParagraph?: number; message?: string }[] }\ndeclare const FlowerHunt: QuartzEmitterPlugin<HuntOptions>\nexport { FlowerHunt, type HuntOptions, type ContentDetails, type ContentIndexMap }\n',
 )
 for (const file of ["index.js", "index.d.ts"]) {
   const filepath = root + "plugin/dist/" + file

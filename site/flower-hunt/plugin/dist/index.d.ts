@@ -1,5 +1,6 @@
 import type { QuartzEmitterPlugin } from "@quartz-community/types"
-export interface HuntOptions {
+import type { ContentDetails, ContentIndexMap } from "@quartz-community/content-index"
+interface HuntOptions {
   id: string
   hiddenPaths: string[]
   destination: string
@@ -12,4 +13,5 @@ export interface HuntOptions {
     message?: string
   }[]
 }
-export declare const FlowerHunt: QuartzEmitterPlugin<HuntOptions>
+declare const FlowerHunt: QuartzEmitterPlugin<HuntOptions>
+export { FlowerHunt, type HuntOptions, type ContentDetails, type ContentIndexMap }
