@@ -1,17 +1,29 @@
-# Quartz v5
+# 🪴 Dom's Digital Garden
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+A place for me to publish my learnings as I dive into topics and document my active projects.
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
+Because I couldn't bring myself to pay [10 dollars a month for Obsidian Publish](https://obsidian.md/publish), I have decided to use a modified version of [quartz](https://quartz.jzhao.xyz/) based on [Brandon Boswell's Tutorial](https://www.youtube.com/watch?v=ITiiuBNVue0&t=364s) which has allowed me to host my own digital garden using GitHub Pages.
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+I have a single Obsidian Vault with personal and public notes hosted on iCloud Drive (so I have access on my iPhone). I have a script that separates personal from public notes, copies them to the content directory, then builds the site. Then I have another script that will add all of the changed files and push them to GitHub where the GitHub Action will build and deploy my site to GitHub Pages.
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
+🔗 [Dom's Digital Garden 🪴](https://domogami.github.io)
 
-## Sponsors
+## Prerequisites
 
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+- Install [Node Version Manager](https://github.com/nvm-sh/nvm)
+
+## How to develop locally
+
+```shell
+nvm use 22
+npm install
+npx quartz build --serve --verbose
+```
+
+Quartz 4.5.2 requires Node 22 or newer.
+
+If `npm install` fails while compiling `sharp` and mentions `libvips` or `node-gyp`, your machine is probably picking up a global `libvips` install. In that case, rerun the install with:
+
+```shell
+SHARP_IGNORE_GLOBAL_LIBVIPS=1 npm install
+```
