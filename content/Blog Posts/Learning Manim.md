@@ -1,12 +1,15 @@
 ---
+publish: true
 title: Learning Manim
+created: 2024-11-03T00:31:34.000Z
+modified: 2025-06-09T01:34:03.388Z
 tags:
   - BlogPost
 ---
 
 ## An Undergraduate Math Proof
 
-I really wanted an excuse to learn [Manim](../Software/Tools/Manim.md) as soon as I found out that it was open source and free to use. I am a huge fan of [3Blue1Brown](https://www.youtube.com/c/3blue1brown) and have always loved his animations and visuals, so when I learned about Manim I immediately wanted to attempt making a video with it.
+I really wanted an excuse to learn [[Manim]] as soon as I found out that it was open source and free to use. I am a huge fan of [3Blue1Brown](https://www.youtube.com/c/3blue1brown) and have always loved his animations and visuals, so when I learned about Manim I immediately wanted to attempt making a video with it.
 
 In my first upper division Math class, "Introduction to Proofs", I vividly remember this one problem which was asked on a final exam. I enjoyed the visual way that I solved it and I recall a great feeling of satisfaction walking out of that exam having figured out this answer on my own.
 

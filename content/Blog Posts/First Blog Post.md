@@ -1,5 +1,8 @@
 ---
+publish: true
 title: My First Blogpost
+created: 2022-07-05T08:48:07.000Z
+modified: 2025-06-09T01:33:58.001Z
 tags:
   - BlogPost
 ---
@@ -20,7 +23,7 @@ After completing a wonderful Remix.js tutorial blog and following a tutorial by 
 
 Once I began brainstorming and designing the backend for my blog I began realizing that I want an easy way to edit and type up new blogposts and that I needed an Admin page to do this. I began by looking into live markdown compilers for websites similar to embedding something like Obsidian or markdown into an edit page. After a bit of research I fell in love with [Editor.js](https://editorjs.io/) which is an open source block editor that felt very similar to Notion which is what I used throughout my senior year of college. I decided that this was perfect and decided to embed it into my edit-blog-post page. I would love to say that this was an easy task but unfortunately this is where my decision to develop with Remix began testing my patience. Editor.js does not work well with SSR at the moment and I found many posts with similar [issues](https://github.com/Jungwoo-An/react-editor-js/issues/58) regarding the 'window' being undefined. Sadly, it seemed that Next.js has a larger community than Remix.js and it took me quite some time to find the solution to this problem. To get around the server side rendering issues with Editor.js on Remix I had to do the following
 
-````tsx
+```tsx
 import EditorJS from '~/editorjs.client.tsx';
 import { ClientOnly } from 'remix-utils';
 
@@ -32,7 +35,7 @@ export default function Editor() {
 		</ClientOnly>
 	);
 }
-````
+```
 
 Using the ClientOnly component from remix-utils and naming the editor component file with the extension `.client.tsx` ended up solving the issue for me. Editor.js cannot currently be rendered on the server so it must be rendered on the client side in order to work as expected. With the editor working I thought that finally the rest would be smooth sailing but alas, I had only just begun.
 
@@ -46,9 +49,9 @@ Multer is a middleware that allows a file to be downloaded by the server side of
 
 ## Editor.js to HTML
 
-Now that I am able to successfully upload images it is time to bring it all together. I stumbled across a library that allows editor.js to be converted to HTML, elegantly named [editors-html](https://www.npmjs.com/package/editorjs-html), which gives me full control to style each component of each blogpost. 
+Now that I am able to successfully upload images it is time to bring it all together. I stumbled across a library that allows editor.js to be converted to HTML, elegantly named [editors-html](https://www.npmjs.com/package/editorjs-html), which gives me full control to style each component of each blogpost.
 
-After a bit of front end witchcraft and tedious styling, my blog was finally coming together, but before I could write any blogposts, I decided that there needed to be a color scheme that supports light mode and dark mode. 
+After a bit of front end witchcraft and tedious styling, my blog was finally coming together, but before I could write any blogposts, I decided that there needed to be a color scheme that supports light mode and dark mode.
 
 ## Color scheme
 
@@ -56,7 +59,7 @@ For this site, I wanted to have a light mode and a dark mode for greater flexibi
 
 I ended up wrapping the entire application in a ThemeProvider component that changes the background and color css properties according to the selected theme.
 
-````tsx
+```tsx
 const ThemeProvider = (props) => {
 	return (
 		<ThemeContext.Provider value={{ theme, setTheme }}>
@@ -64,11 +67,11 @@ const ThemeProvider = (props) => {
 		</ThemeContext.Provider>
 	);
 };
-````
+```
 
 The following scss code creates a mixin that can be used across scss files to add a custom theme-specific style to specified components.
 
-````scss
+```scss
 @mixin themed() {
   @each $theme, $map in $themes {
     .theme--#{$theme} & {
@@ -91,11 +94,11 @@ The following scss code creates a mixin that can be used across scss files to ad
 @function t($key) {
   @return map-get($theme-map, $key);
 }
-````
+```
 
 Next, create the themes
 
-````scss
+```scss
 $themes: (
   Light: (
     bg: $bg--light,
@@ -118,17 +121,17 @@ $themes: (
     y: #e5c07b,
   ),
 );
-````
+```
 
 After adding this piece of code, all that is left is to theme each component according to the `themed()` property as shown below.
 
-````scss
+```scss
 .exampleClass {
 	@include themed() {
 		background-color: t('g');
 	}
 }
-````
+```
 
 # Conclusion
 
@@ -136,9 +139,9 @@ After all of this work, there is still so much left to do. I have yet to do the 
 
 ### Todo
 
-* [ ] Mobile Support
-* [ ] Color Scheme flash bug
-* [ ] Better Post Query Support
-* [ ] Post Search Function
+- [ ] Mobile Support
+- [ ] Color Scheme flash bug
+- [ ] Better Post Query Support
+- [ ] Post Search Function
 
-However, despite this blog not being complete, I have already learned so much about not only Remix but also React in general and SCSS. I also got very distracted by my new obsession with neovim and ricing [MacOS](../Software/Tools/MacOS.md). The only thing left is to write some actual blogposts and it seems my first one is just about finished.
+However, despite this blog not being complete, I have already learned so much about not only Remix but also React in general and SCSS. I also got very distracted by my new obsession with neovim and ricing [[MacOS]]. The only thing left is to write some actual blogposts and it seems my first one is just about finished.

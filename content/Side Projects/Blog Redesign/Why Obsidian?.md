@@ -1,5 +1,8 @@
 ---
+publish: true
 title: Why Obsidian?
+created: 2022-09-22T23:22:57.000Z
+modified: 2022-11-09T08:47:09.000Z
 ---
 
 # The Problem
@@ -12,9 +15,9 @@ This dilemma drove me to trying new solutions like Evernote and Notion. I really
 
 # Obsidian
 
-Eventually I discovered Obsidian. My mentor during my junior year internship suggested I try out obsidian for notetaking, as all of the files are only stored locally and as I quickly discovered, Obsidian supports vim keybindings! After discovering that the "Obsidian Vault" is just a directory, I learned that I could put my vault on iCloud Drive and access my notes from the Obsidian app on iPhone. This, in addition to discovering community plugins made Obsidian nearly perfect. The only complaint that I had was that I could not access my notes from the web like I used to be able to do from Notion. 
+Eventually I discovered Obsidian. My mentor during my junior year internship suggested I try out obsidian for notetaking, as all of the files are only stored locally and as I quickly discovered, Obsidian supports vim keybindings! After discovering that the "Obsidian Vault" is just a directory, I learned that I could put my vault on iCloud Drive and access my notes from the Obsidian app on iPhone. This, in addition to discovering community plugins made Obsidian nearly perfect. The only complaint that I had was that I could not access my notes from the web like I used to be able to do from Notion.
 
-This is when I discovered Obsidian Publish! It allows you to publish a subset of your notes to the internet and it renders the graph view on the website so readers can see how notes are connected and explore related topics. The problem with Publish however is that is comes at a costly $20/month. I began exploring free open source solutions and I came across Quartz which is a free Hugo website that can be generated from an Obsidian Vault and can be self hosted. I chose to use Github pages to deploy the site because of its simplicity combined with the fact that I haven't decided on a custom domain yet.
+This is when I discovered Obsidian Publish! It allows you to publish a subset of your notes to the internet and it renders the graph view on the website so readers can see how notes are connected and explore related topics. The problem with Publish however is that is comes at a costly \$20/month. I began exploring free open source solutions and I came across Quartz which is a free Hugo website that can be generated from an Obsidian Vault and can be self hosted. I chose to use Github pages to deploy the site because of its simplicity combined with the fact that I haven't decided on a custom domain yet.
 
 # Quartz
 

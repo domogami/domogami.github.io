@@ -1,5 +1,8 @@
 ---
+publish: true
 title: Editor.js
+created: 2022-06-24T23:43:30.000Z
+modified: 2025-06-09T01:33:42.197Z
 tags:
   - Blog
 ---
@@ -8,15 +11,15 @@ tags:
 
 I was having a very difficult time setting up editor.js with my blog because the framework I am working with is server side rendered and uses typescript. I am getting a strange type error when I render the component (but at least I can render the component)
 
-````ts
+```ts
 Uncaught TypeError: Cannot read properties of null (reading 'dataset')
-````
+```
 
-````tsx
+```tsx
 <ClientOnly>
 	{() => <EditorJsWrapper />}
 </ClientOnly>
-````
+```
 
 Solution:
 I found out that the issue was actually being caused by my `<ThemeProvider/>`

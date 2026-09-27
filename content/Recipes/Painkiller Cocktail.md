@@ -1,5 +1,8 @@
 ---
+publish: true
 title: Painkiller Cocktail
+created: 2025-12-08T08:43:46.000Z
+modified: 2026-01-01T22:07:15.836Z
 ---
 
 A delicious cocktail courtesy of my friend Max
@@ -11,7 +14,7 @@ Mix the following in a shaker:
 
 .5oz Dry Curacao (Pierre Ferrand is my preferred bottle, but Cointreau is also good, makes for a slightly drier and crisper drink)
 
-2-3.5oz Rum (amount is to taste, and bottle should be either a Venezuelan or Jamaican rum, but *not* Wray & Nephew. Diplomatico, Flor De Caña, and Smith & Cross make good bottles for this. Pusser's is also a good brand, but it doesn't have as much depth)
+2-3.5oz Rum (amount is to taste, and bottle should be either a Venezuelan or Jamaican rum, but _not_ Wray & Nephew. Diplomatico, Flor De Caña, and Smith & Cross make good bottles for this. Pusser's is also a good brand, but it doesn't have as much depth)
 
 OPTIONAL:
 

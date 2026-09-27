@@ -1,4 +1,7 @@
 ---
+publish: true
+created: 2025-07-24T20:16:01.079Z
+modified: 2025-07-24T20:39:29.211Z
 ---
 
 # Description
@@ -9,4 +12,4 @@ Funny enough, the ACH only operates Mon-Friday during business hours [source](ht
 
 ## Links
 
-* [More on ACH](https://en.wikipedia.org/wiki/Automated_clearing_house)
+- [More on ACH](https://en.wikipedia.org/wiki/Automated_clearing_house)

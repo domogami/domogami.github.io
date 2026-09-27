@@ -1,5 +1,8 @@
 ---
+publish: true
 title: Prime Rib
+created: 2023-12-25T22:15:28.000Z
+modified: 2025-06-11T07:57:31.930Z
 tags:
   - Cooking
 ---

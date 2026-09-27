@@ -1,14 +1,17 @@
 ---
+publish: true
 title: Notetaking Tech Stack
+created: 2025-06-01T08:38:09.656Z
+modified: 2025-06-06T09:14:48.525Z
 ---
 
 # Overview
 
-To capture notes, I use [Obsidian](https://obsidian.md/) with a vault (directory) stored on iCloud Drive. This lets me also use the Obsidian mobile app for quick notetaking on the go. I separate my notes by *Public* and *Private* so I can keep things like my Daily Journaling, project trackers, and personal thoughts separate from the notes I choose to host publicly.  For this, I use [Obsidian Export](https://github.com/zoni/obsidian-export) to copy and format only specific public files and I put those files in the [Quartz](https://quartz.jzhao.xyz/) content directory which I then compile into a website that can be hosted on [Github pages](https://pages.github.com/) with a Github Actions script. 
+To capture notes, I use [Obsidian](https://obsidian.md/) with a vault (directory) stored on iCloud Drive. This lets me also use the Obsidian mobile app for quick notetaking on the go. I separate my notes by _Public_ and _Private_ so I can keep things like my Daily Journaling, project trackers, and personal thoughts separate from the notes I choose to host publicly.  For this, I use [Obsidian Export](https://github.com/zoni/obsidian-export) to copy and format only specific public files and I put those files in the [Quartz](https://quartz.jzhao.xyz/) content directory which I then compile into a website that can be hosted on [Github pages](https://pages.github.com/) with a Github Actions script.
 
 ## Primary Editor
 
-I primarily use [Obsidian](https://obsidian.md/) with [Vim](../../Software/Tools/Vim.md) keybindings to write and edit my notes but occasionally I will use [Neovim](../../Software/Tools/Neovim.md) with the [Obsidian Nvim Plugin](https://github.com/epwalsh/obsidian.nvim).
+I primarily use [Obsidian](https://obsidian.md/) with [[Vim]] keybindings to write and edit my notes but occasionally I will use [[Neovim]] with the [Obsidian Nvim Plugin](https://github.com/epwalsh/obsidian.nvim).
 
 ## Github Pages
 

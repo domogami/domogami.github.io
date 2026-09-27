@@ -1,5 +1,8 @@
 ---
+publish: true
 title: Digital Garden 🪴
+created: 2025-06-01T08:16:08.721Z
+modified: 2025-06-06T19:03:12.190Z
 ---
 
 # What is a Digital Garden?

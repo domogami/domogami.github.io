@@ -1,8 +1,12 @@
 ---
-title: "Differential Geometry"
+publish: true
+title: Differential Geometry
+created: 2021-12-24T21:24:26.000Z
+modified: 2026-08-04T05:26:56.468Z
 tags:
-- School
+  - School
 ---
+
 Section 1-19 of Rabin's Notes
 
 [Last Lecture](https://app.notion.com/p/ff1ef464af3e4e54951b83da3a0434a4)
@@ -10,10 +14,13 @@ Section 1-19 of Rabin's Notes
 [Last TA OH](https://app.notion.com/p/91e3da2d1e454a18bdc28061f155db4f)
 
 # Curves
+
 A curve $\alpha(t) = [x(t),y(t),z(t)]$ a **curve's derivative** $\alpha(t) = [x(t),y(t),z(t)]$
 **Length of a curve** $|\alpha'(t)|$ is the speed at a time t
 Def: **Regular Curve** if $\alpha'(t) \neq 0\  \forall \ t$
+
 ### Parameterizations of Curves
+
 **Ex:** A parabola $y=x^2 \in \mathbb{R}^2$ has parameterization $\alpha(t) = (t,t^2)$ or $\beta(t) = (t^3,t^6)$
 $\implies \alpha'(t) = (1,2t)$ and $\beta'(t) = (3t^2,6t^5)$
 Unit Speed Parametrization $\Longleftrightarrow$ parametrization by arc length
@@ -30,6 +37,7 @@ $$
 $$
 
 ### Cross Products
+
 Note that the product rule holds for cross products
 
 $$
@@ -37,6 +45,7 @@ $$
 $$
 
 # Fernet Formulas
+
 ## Unit Speed
 
 $$
@@ -97,9 +106,11 @@ $$
 **Theorem:** $\tau = 0, \ \kappa\ = \frac{1}{R}\ \Longleftrightarrow \alpha$ is a circle
 
 ### The fundamental Theorem on Curves
+
 **Theorem:** Given any smooth functions $\kappa(s) > 0$ and $\tau(s)$, there exists a regular, smooth unit-speed curve, $\alpha$ having $\kappa$ and $\tau$ as its curvature and torsion. This curve is unique in $\mathbb{R}^3$!
 
 ## Arbitrary Speed Curves
+
 ### Fernet Formulas for Arbitrary Speed Curves
 
 $$
@@ -120,19 +131,27 @@ $$
 $$
 
 # Surfaces
+
 Definitions:
+
 - **Regular** mapping $x: D \rightarrow \mathbb{R}^3 $ if $x_u \times x_v \neq 0\ \forall\ u, v\in D$
 - **Coordinate Patch:** is a one-to-one mapping x of some open set D in $\mathbb{R}^2$ into $\mathbb{R}^3$
 - **Surface:** A subset M of $\mathbb{R}^3$ such that each point of M has a neighborhood in M that is contained in the image of some patch
 - **Atlas:** A collection of patches whose images cover all of M
 - Curves with constant u on M are called Parallels
 - Curves with constant v on M are called Meridians
+
 ### Implicit Function Theorem
+
 If $f(x,y,z)$ is smooth and let $S = \{(x,y,z)\in \mathbb{R}^3: f(x,y,z) = 0\}$ if $p \in S$ is a point where $f_z \neq 0$, then there is a neighborhood D of p in which the set $S\ \cap\ D$ is a graph of a smooth function $z = g(x,y)$
+
 ### Important Corollary
+
 A sufficient condition for S to be a surface is that $f_x, f_y, f_z$ do not vanish at any point of S
 $\implies$ if we get $\nabla f = 0$ then something went wrong
+
 # Curves and Tangent Vectors
+
 The coordinate curves of a parameterized surface $x(u,v)$ are $x_u, x_v$ and together they span the tangent plane $T_p(M)$. We define the **Unit Normal Vector** as follows
 
 $$
@@ -140,8 +159,11 @@ U= \frac{x_u \times x_v}{|x_u \times x_v|}
 $$
 
 Note: $x_u, x_v$ are not necessarily unit vectors and not necessarily orthogonal
+
 ### Directional Derivative
+
 We say that $\nabla_v f$ is the derivative of f in the v direction
+
 # Shape Operator
 
 $$
@@ -150,7 +172,9 @@ $$
 
 If M is a plane then U is constant $\implies\ S_p(v) = 0$ for all v
 If M is a sphere of radius $R$ then $S_p(v) = \frac{-v}{R}$
+
 ### Fundamental Theorem of Shape Operator
+
 **Theorem:** $S_p$ is a self-adjoint linear operator from $T_p(M)$ to itself
 **Corollary:**
 
@@ -185,6 +209,7 @@ If $k_n(T_\alpha) = 0,\ \alpha$ is **Asymptotic**
 Quantities that change sign if $U \rightarrow -U$: $S,\ k_i,\ H$
 Note that $K$ stays the same
 **Theorem:** If every point of a connected surface M is **umbilic** then M is part of a plane or sphere
+
 ### Curvature Formulas
 
 $$
@@ -241,7 +266,9 @@ k_1, k_2 = H \pm \sqrt{H^2-K}
 $$
 
 ## Special Cases
+
 ### Monge Patch
+
 ${x}(u,v) = [u,v,f(u,v)]$
 
 $$
@@ -261,6 +288,7 @@ K = \frac{f_{xx}f_{yy} - f_{xy}^2}{W},\ H = \frac{[(1+f_x^2)f_{yy}-2f_{x}f_{y}f_
 $$
 
 ### Surface of Revolution
+
 $x(u,v) = [g(u), h(u)cosv,h(u)sinv]$
 
 $$
@@ -324,6 +352,7 @@ $$
 # Isometries
 
 # Geodesics
+
 We can split the acceleration of a curve, $C: \alpha(t) = x[u(t),v(t)]$ where the first term is the normal component of acceleration, $\alpha$ and the second component is the orthogonal projection of $\alpha$ onto the tangent plane to M at
 
 $$
@@ -333,6 +362,7 @@ $$
 For unit speed, $|\alpha''| = \kappa(t)$
 
 # Formulas
+
 ### Fernet Formulas
 
 $$

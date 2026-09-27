@@ -1,5 +1,8 @@
 ---
+publish: true
 title: Timebox
+created: 2025-06-06T23:13:24.507Z
+modified: 2025-06-07T02:30:45.000Z
 ---
 
 # What is Time boxing?
@@ -8,4 +11,4 @@ Time boxing is a strategy that I learned from a manager at Amazon where I dedica
 
 # Why is this helpful?
 
-This is also useful for exploratory tasks because sometimes when there is not a specific goal, people can spend an unreasonable amount of time researching without actually starting work on the task. Time boxing is one of the essential skills that I had to learn in order to actually get stuff done as a developer but unfortunately it also prevents things like falling down long [Rabbit Holes](../My%20Experiences/Rabbit%20Holes.md) and getting distracted from the task at hand.
+This is also useful for exploratory tasks because sometimes when there is not a specific goal, people can spend an unreasonable amount of time researching without actually starting work on the task. Time boxing is one of the essential skills that I had to learn in order to actually get stuff done as a developer but unfortunately it also prevents things like falling down long [[Rabbit Holes]] and getting distracted from the task at hand.

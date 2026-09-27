@@ -1,5 +1,8 @@
 ---
+publish: true
 title: AWS Cloud Development Kit (CDK)
+created: 2023-04-22T04:41:32.000Z
+modified: 2025-06-07T02:30:45.000Z
 ---
 
 # CDK is Weird
@@ -14,7 +17,7 @@ I did a wild thing in 2024. I told my new manager that I did not have a strong u
 
 There is an [Open Issue with the AWS CDK Lib](https://github.com/aws/aws-cdk/issues/34290) that has caused me many headaches. One way to prevent some issues with resources being created in an unintended order is to specifically add manual dependencies with the `.node.addDependency()` function as shown below.
 
-````ts {11}
+```ts {11}
 private attachToELBv2(targetGroup: elbv2.ITargetGroup, containerName: string, containerPort: number): elbv2.LoadBalancerTargetProps {
   // ...
   this.loadBalancers.push({
@@ -29,7 +32,7 @@ private attachToELBv2(targetGroup: elbv2.ITargetGroup, containerName: string, co
   
   // ...
 }
-````
+```
 
 ## What I've Learned Working with CDK
 

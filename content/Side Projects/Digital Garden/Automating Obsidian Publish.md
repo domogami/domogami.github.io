@@ -1,19 +1,20 @@
 ---
+publish: true
 title: Automating Obsidian Publish
+created: 2024-10-29T06:14:50.000Z
+modified: 2025-06-01T08:37:16.263Z
 ---
 
 # Motivation
 
-To make it easier for me to keep my [Digital Garden 🪴](../../Concepts/Digital%20Garden%20%F0%9F%AA%B4.md) website up to date with my personal vault, I needed to automate the publish process to reduce friction between making updates locally and publishing changes. Below are the two scripts I can trigger from [Raycast](../../Software/Tools/Raycast.md) in order to quickly update my website with a simple hotkey and keyword.
+To make it easier for me to keep my [[Digital Garden 🪴]] website up to date with my personal vault, I needed to automate the publish process to reduce friction between making updates locally and publishing changes. Below are the two scripts I can trigger from [[Raycast]] in order to quickly update my website with a simple hotkey and keyword.
 
- > 
- > \[!note\] Excluded Files
- > To exclude files and directories, check the `.export-ignore` file in the root of the vault. That is respected by obsidian export
+> [!note] Excluded Files
+> To exclude files and directories, check the `.export-ignore` file in the root of the vault. That is respected by obsidian export
 
- > 
- > \[!warning\] Raycast Does Not Support Input Mid Execution
+> [!warning] Raycast Does Not Support Input Mid Execution
 
-Because [Raycast](../../Software/Tools/Raycast.md) does not support the ability to prompt the user for inputs mid-execution, I decided to make two separate scripts. The first script exports my obsidian vault, builds the quartz site, and then lists the diffed files to ensure that there are no unintended additions. 
+Because [[Raycast]] does not support the ability to prompt the user for inputs mid-execution, I decided to make two separate scripts. The first script exports my obsidian vault, builds the quartz site, and then lists the diffed files to ensure that there are no unintended additions.
 
 ## Obsidian Export
 
@@ -21,7 +22,7 @@ I use [Obsidian Export](https://github.com/zoni/obsidian-export) to copy over no
 
 ## Build Script
 
-````bash
+```bash
 #!/bin/bash
 
 # Required parameters:
@@ -67,11 +68,11 @@ fi
 # Display git status
 echo "📄 Git Status:"
 git status
-````
+```
 
 ## Publish Script
 
-````bash
+```bash
 #!/bin/bash
 
 # Required parameters:
@@ -98,4 +99,4 @@ git commit -m "✨ [FEAT] $date Update"
 git push
 
 echo "✅ Published successfully!"
-````
+```

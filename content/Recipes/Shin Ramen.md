@@ -1,5 +1,8 @@
 ---
+publish: true
 title: Shin Ramen
+created: 2024-05-28T07:00:21.000Z
+modified: 2026-05-26T07:16:14.195Z
 tags:
   - Cooking
 ---
@@ -10,22 +13,22 @@ I really love the [Nongshim Shin Ramyun Black](https://a.co/d/0i5G8as) but after
 
 ## Ingredients
 
-* 2 Cups of Water
-* 1 Pack of [Shin Black Ramen](https://a.co/d/0i5G8as)
-* 1 [Chinese Sausage](https://www.costco.com/kam-yen-jan-chinese-style-sausage%2C-21-oz.%2C-2-count--.product.100444318.html) (AKA: Kam Yen Jan)
-* 2 Cloves of Garlic
-* 1 Knob of Ginger
-* 1 Tbsp of Peanut Butter
-* 2 Tsp of Crushed Red Pepper
-* 2 Green onions
-* 2 Eggs
+- 2 Cups of Water
+- 1 Pack of [Shin Black Ramen](https://a.co/d/0i5G8as)
+- 1 [Chinese Sausage](https://www.costco.com/kam-yen-jan-chinese-style-sausage%2C-21-oz.%2C-2-count--.product.100444318.html) (AKA: Kam Yen Jan)
+- 2 Cloves of Garlic
+- 1 Knob of Ginger
+- 1 Tbsp of Peanut Butter
+- 2 Tsp of Crushed Red Pepper
+- 2 Green onions
+- 2 Eggs
 
 ## Instructions
 
 1. To start, boil 2 cups of water.
-1. Next, mince your garlic, ginger.
-1. Dice your [Chinese Sausage](https://www.costco.com/kam-yen-jan-chinese-style-sausage%2C-21-oz.%2C-2-count--.product.100444318.html) and slice your green onion into rings.
-1. After the water is boiling, add the Ramen, Chinese Sausage, garlic, ginger, and soup packets. 
-1. Additionally, I like to add in 1 Tbsp of peanut butter, 2 Tsp of crushed red pepper
-1. Boil for 5-8 minutes, then crack two eggs and cover.
-1. After about 2 minutes or when eggs are cooked with runny yolks, uncover serve. Add green onions for garnish.
+2. Next, mince your garlic, ginger.
+3. Dice your [Chinese Sausage](https://www.costco.com/kam-yen-jan-chinese-style-sausage%2C-21-oz.%2C-2-count--.product.100444318.html) and slice your green onion into rings.
+4. After the water is boiling, add the Ramen, Chinese Sausage, garlic, ginger, and soup packets.
+5. Additionally, I like to add in 1 Tbsp of peanut butter, 2 Tsp of crushed red pepper
+6. Boil for 5-8 minutes, then crack two eggs and cover.
+7. After about 2 minutes or when eggs are cooked with runny yolks, uncover serve. Add green onions for garnish.

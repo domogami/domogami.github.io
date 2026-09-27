@@ -1,8 +1,11 @@
 ---
+publish: true
 title: Survivorship Bias
+created: 2025-07-15T03:14:43.701Z
+modified: 2025-07-15T03:26:23.559Z
 ---
 
-* [Wikipedia](https://en.wikipedia.org/wiki/Survivorship_bias)
+- [Wikipedia](https://en.wikipedia.org/wiki/Survivorship_bias)
 
 Survivorship bias is something that I try to keep in mind when I consume media or browse social media. It is the tendency for people to overemphasize the survivors and deemphasize those that did not survive.
 

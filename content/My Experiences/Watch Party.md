@@ -1,12 +1,15 @@
 ---
+publish: true
 title: Watch Party
+created: 2025-06-06T23:04:43.778Z
+modified: 2025-06-07T08:17:33.144Z
 tags:
   - amazon
 ---
 
 # What was Prime Video Watch Party?
 
-[Prime Video Watch Party](https://variety.com/2020/digital/news/amazon-prime-video-launches-watch-party-1234693515/) was a feature on Amazon Prime Video that allowed users to stream Prime Video (PV) content and keep it in sync across devices and across different accounts. During Covid, this allowed family and friends to stay connected and watch synchronized content together while also letting users chat with each other. 
+[Prime Video Watch Party](https://variety.com/2020/digital/news/amazon-prime-video-launches-watch-party-1234693515/) was a feature on Amazon Prime Video that allowed users to stream Prime Video (PV) content and keep it in sync across devices and across different accounts. During Covid, this allowed family and friends to stay connected and watch synchronized content together while also letting users chat with each other.
 
 ## Why this features matters to me
 

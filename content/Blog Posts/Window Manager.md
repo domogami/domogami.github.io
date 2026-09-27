@@ -1,22 +1,25 @@
 ---
+publish: true
 title: Window Manager
+created: 2024-10-26T23:47:01.000Z
+modified: 2025-06-09T01:34:07.102Z
 tags:
   - BlogPost
 ---
 
 # Overview
 
-As someone who primarily uses [MacOS](../Software/Tools/MacOS.md), I find that I need a way to quickly jump from application to application as fast as possible and by default MacOS does not have a good way to do this. Alt-Tab is an okay method of jumping to your last used application but when I discovered Window Managers (WM) like [Aerospace](https://github.com/nikitabobko/AeroSpace) and [Yabai](https://github.com/koekeishiya/yabai) I could not go back. The basic idea is that the user can create multiple "spaces" with assigned applications, similar to [virtual desktops](https://support.apple.com/guide/mac-help/work-in-multiple-spaces-mh14112/mac) on [MacOS](../Software/Tools/MacOS.md) and *Windows*. Then you can quickly switch between spaces with keyboard shortcuts.
+As someone who primarily uses [[MacOS]], I find that I need a way to quickly jump from application to application as fast as possible and by default MacOS does not have a good way to do this. Alt-Tab is an okay method of jumping to your last used application but when I discovered Window Managers (WM) like [Aerospace](https://github.com/nikitabobko/AeroSpace) and [Yabai](https://github.com/koekeishiya/yabai) I could not go back. The basic idea is that the user can create multiple "spaces" with assigned applications, similar to [virtual desktops](https://support.apple.com/guide/mac-help/work-in-multiple-spaces-mh14112/mac) on [[MacOS]] and [[Windows]]. Then you can quickly switch between spaces with keyboard shortcuts.
 
 # Current Choice
 
-Currently I use [Aerospace](https://github.com/nikitabobko/AeroSpace) for it's nearly instant space switching, ease of use, and I do not need to disable System Integrity Protection (SIP) on [MacOS](../Software/Tools/MacOS.md) which is a requirement for [Yabai](../Software/Tools/Yabai.md).
+Currently I use [Aerospace](https://github.com/nikitabobko/AeroSpace) for it's nearly instant space switching, ease of use, and I do not need to disable System Integrity Protection (SIP) on [[MacOS]] which is a requirement for [[Yabai]].
 
 # My Journey to find the right WM
 
 ## Yabai
 
-I use a window manager called [Yabai](../Software/Tools/Yabai.md) on my work computer and I have spoken highly of it in the past. I use a 2019 Intel MacBook Pro at my full time job which is prone to overheating and poor performance when running anything beyond IntelliJ. For this reason, I've found Yabai to be the most performant and best overall option despite it's shortcomings. Most notably, Yabai does not allow near-instant space switching without disabling SIP, which most certainly cannot be done on a work machine managed by an organization.
+I use a window manager called [[Yabai]] on my work computer and I have spoken highly of it in the past. I use a 2019 Intel MacBook Pro at my full time job which is prone to overheating and poor performance when running anything beyond IntelliJ. For this reason, I've found Yabai to be the most performant and best overall option despite it's shortcomings. Most notably, Yabai does not allow near-instant space switching without disabling SIP, which most certainly cannot be done on a work machine managed by an organization.
 
 ## Aerospace
 

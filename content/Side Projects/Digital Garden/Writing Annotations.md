@@ -1,6 +1,9 @@
 ---
+publish: true
 title: Writing Annotations
 description: A copy-and-paste guide to handwritten notes, arrows, folding, and animation in the garden.
+created: 2026-09-27T00:06:07.565Z
+modified: 2026-09-27T00:06:08.768Z
 ---
 
 Annotations are ordinary Markdown callouts. Their words live in the note, while the garden adds the handwritten font, optional arrow, and writing animation. There is no separate annotation editor or hidden store of text.

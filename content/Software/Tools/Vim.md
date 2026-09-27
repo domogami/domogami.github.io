@@ -1,5 +1,8 @@
 ---
+publish: true
 title: Vim
+created: 2025-06-09T07:42:04.242Z
+modified: 2025-06-09T07:46:47.569Z
 ---
 
 # What is Vim?
@@ -8,4 +11,4 @@ Vim is a text editor. It was designed with a keyboard centered approach to navig
 
 ## Vim Learning Curve
 
-![vim-efficiency-curve.jpg](../../Images/vim-efficiency-curve.jpg)
+![[Images/vim-efficiency-curve.jpg]]

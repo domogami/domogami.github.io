@@ -1,10 +1,13 @@
 ---
+publish: true
 title: Neovim
+created: 2025-06-09T07:21:50.410Z
+modified: 2025-06-09T07:38:41.321Z
 ---
 
 ## What is Neovim?
 
-To me, [neovim](https://neovim.io/) is a fun and usable version of Vim that can be extended to mimic all of the functionality of an [Integrated Development Environment](https://en.wikipedia.org/wiki/Integrated_development_environment) like [VS Code](https://code.visualstudio.com/). 
+To me, [neovim](https://neovim.io/) is a fun and usable version of Vim that can be extended to mimic all of the functionality of an [Integrated Development Environment](https://en.wikipedia.org/wiki/Integrated_development_environment) like [VS Code](https://code.visualstudio.com/).
 
 I primarily use [Lazy Nvim](https://github.com/folke/lazy.nvim) which has many of the plugins you need out of the box to get started. I was originally using [LunarVim](https://www.lunarvim.org/) but it was sadly [no longer maintained](https://www.reddit.com/r/neovim/comments/1caaldi/lunarvim_has_been_abandoned_by_maintainers/) but actually looking at the repo has active commits and [this is still an open issue](https://github.com/LunarVim/LunarVim/issues/4639).
 

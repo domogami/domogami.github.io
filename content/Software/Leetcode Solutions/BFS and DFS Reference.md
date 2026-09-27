@@ -1,10 +1,11 @@
 ---
+publish: true
 title: BFS and DFS Reference
 created: 2026-06-08
+modified: 2026-06-09T05:05:18.556Z
 ---
 
-
-````python
+```python
 from collections import deque
 
 def bfs(graph, start):
@@ -30,9 +31,9 @@ graph = {
 }
 
 bfs(graph, 'A')
-````
+```
 
-````python
+```python
 def dfs_recursive(graph, node, visited=None):
     if visited is None:
         visited = set()
@@ -52,4 +53,4 @@ graph = {
 }
 
 dfs_recursive(graph, 'A')
-````
+```
