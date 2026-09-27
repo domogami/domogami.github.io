@@ -1,0 +1,23 @@
+// Graph labels inherit the same paper/ink tokens as their surrounding panel.
+.graph-container,
+.global-graph-container {
+  position: relative;
+
+  .notebook-graph-label {
+    position: absolute;
+    z-index: 2;
+    pointer-events: none;
+    box-sizing: border-box;
+    width: max-content;
+    max-width: min(18rem, calc(100% - 16px));
+    padding: 0.35rem 0.6rem;
+    border: 1px solid color-mix(in srgb, var(--gray) 25%, transparent);
+    border-radius: 6px;
+    background: color-mix(in srgb, var(--light) 96%, transparent);
+    color: var(--dark);
+    box-shadow: 0 2px 8px color-mix(in srgb, var(--dark) 10%, transparent);
+    font: 400 0.8rem / 1.4 var(--bodyFont);
+    text-align: center;
+    overflow-wrap: anywhere;
+  }
+}

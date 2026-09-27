@@ -1,0 +1,93 @@
+// Quartz owns the tree and toggle events; the notebook owns their layout.
+// Collapse actual lists instead of squeezing larger headings into a 1.2rem flex box.
+.page > #quartz-body .explorer {
+  min-height: 2rem;
+  > .desktop-explorer {
+    flex-shrink: 0;
+    min-height: 2rem;
+  }
+  &.collapsed {
+    flex: 0 0 auto;
+    > .explorer-content {
+      display: none;
+    }
+  }
+  > .explorer-content {
+    box-sizing: border-box;
+  }
+  // Keep the tree measurable during its short close, then restore display:none.
+  > .explorer-content[data-notebook-explorer-motion] {
+    display: block;
+    overflow: hidden;
+    min-height: 0;
+  }
+  .fold {
+    transition: transform 320ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+}
+.page > #quartz-body .toc {
+  min-height: 2rem;
+  &:has(.toc-header.collapsed) {
+    flex: 0 0 auto;
+  }
+  > .toc-header {
+    flex-shrink: 0;
+    min-height: 2rem;
+  }
+  > .toc-content.collapsed {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page > #quartz-body .explorer .fold {
+    transition: none;
+  }
+}
+
+// An in-flow mobile menu below the brand and controls, with no drawer or overlay.
+@media (max-width: 800px) {
+  .page > #quartz-body > .sidebar.left:has(.explorer) {
+    position: relative;
+    > .explorer {
+      display: contents;
+      > .mobile-explorer {
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: end;
+        z-index: auto;
+      }
+      > .explorer-content {
+        grid-column: 1 / -1;
+        grid-row: 3;
+        position: static;
+        transform: none;
+        transition: none;
+        visibility: visible;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        max-height: none;
+        margin: 0;
+        padding: 1rem 0 0.25rem;
+        border-top: 1px solid var(--lightgray);
+        background: none;
+        overflow: visible;
+        z-index: auto;
+        > .explorer-ul {
+          max-height: none;
+          overflow: visible;
+          // No faded last item: the whole tree now participates in page scrolling.
+          mask-image: none;
+        }
+      }
+      &:not(.collapsed) > .explorer-content {
+        display: block;
+      }
+    }
+  }
+  .page > #quartz-body.lock-scroll > :not(.sidebar.left:has(.explorer)) {
+    transform: none;
+  }
+}

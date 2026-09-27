@@ -1,0 +1,72 @@
+{
+  "plugin": "Quartz Syncer",
+  "version": "2.0.18",
+  "commit": "2ce5047df7d4127107b12c00c61ab21f9f86aa78",
+  "method": "Isolated original declarations with synthetic Obsidian/compiler/backend boundaries; no remote writes",
+  "observations": [
+    {
+      "test": "Strict publication flag",
+      "requirementMet": false,
+      "observed": "Boolean false is excluded; string \"false\" passes the flag helper."
+    },
+    {
+      "test": "Note scope and default exclusion",
+      "requirementMet": true,
+      "observed": "Unmarked Markdown and notes outside Public/ are excluded in the fallback path."
+    },
+    {
+      "test": "Bases require explicit note flag",
+      "requirementMet": false,
+      "observed": "Enabling Bases includes an unflagged .base as a candidate, still subject to selection."
+    },
+    {
+      "test": "New entries start unchecked",
+      "requirementMet": true,
+      "observed": "No new entries selected in a fresh TreeState."
+    },
+    {
+      "test": "Embedded media stays within public root",
+      "requirementMet": false,
+      "observed": "The original converter resolves Private/scan.png from a note scoped to Public/."
+    },
+    {
+      "test": "Unchecking attachment prevents upload",
+      "requirementMet": false,
+      "observed": "Original UI controller and publisher still stage the unchecked private-path image."
+    },
+    {
+      "test": "Edits after review require new approval",
+      "requirementMet": false,
+      "observed": "Review helper returns A; after mtime changes, publisher sends B without an approval token."
+    },
+    {
+      "test": "Whole reviewed batch stops on failure",
+      "requirementMet": false,
+      "observed": "One note fails compilation; the other is still written with a reported partial failure."
+    },
+    {
+      "test": "Entirely failed compilation writes nothing",
+      "requirementMet": true,
+      "observed": "A batch with only the failing fixture does not call the remote writer."
+    },
+    {
+      "test": "Mobile destination is explicit",
+      "requirementMet": null,
+      "observed": "A configured local target resolves to remote on mobile when both exist; resolver reports the override. UI disclosure not tested."
+    }
+  ],
+  "sourceSha256": {
+    "src/utils/utils.ts": "a6a9ab3254ae505c9abe5262c8cc23ee8b1ef3c28204154e956fd52ef490920a",
+    "src/publishFile/PublishFile.ts": "04af9fa111126cb2931660174d9bea5da18a770fdde48e0f3e1b7d7948b8d729",
+    "src/publishFile/Validator.ts": "dd29307082698489bcef512637186cd601dba24758eaf4fa552fada6c92ae270",
+    "src/publishFile/PublishCandidates.ts": "4dba227b03c5b672a84043e44ea3e69d97c70c8608b32d674d85213b003dedb1",
+    "src/views/PublicationCenter/TreeState.ts": "6aec5b900a5473739630ecac853cf49dd6954ef80b1933622563c42eb51d08bb",
+    "src/git/PathMapper.ts": "e2d9a72cf1eef7ae65ba539b4cc309c496cac3be1f8f7fd545747d61b49f008c",
+    "src/services/DynamicCompilationSession.ts": "ae08f621cbe9d3979b1454279b7f7ec4592ad0d41091fa70908b596e9f083e65",
+    "src/publisher/PublishStatusManager.ts": "8e082f191c56e017e296ebd492391207c2188b649ac846e56af9b002742d6622",
+    "src/publisher/Publisher.ts": "2c390fae288477644f2b0ab2654c1301e971c05cc7404beead3d3509c3b1638d",
+    "src/views/PublicationCenter/PublicationCenter.ts": "e86c323c1426f20ef4aab6701773dc63ec76bfdc5373ebd6fe12da406046d9a9",
+    "src/compiler/SyncerPageCompiler.ts": "6cfd2a7bf1bc8657428b6a632d5bc0982565e06c57b465b88bf6816c424e499e",
+    "src/publisher/PublishTargetResolver.ts": "7ed8f1a901739e3378cdb04d34c6b11e47a6d03f007a752678960ce08bc07a03"
+  }
+}

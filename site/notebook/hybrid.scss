@@ -1,0 +1,112 @@
+@use "sass:map";
+@use "../../quartz/styles/variables.scss" as quartz;
+
+// Hybrid changes surfaces, not layout: all modes share the same control/article positions.
+:root[data-notebook-theme="blended"] {
+  --hybrid-charcoal: #2b3034;
+  --hybrid-blue-paper: #c6d9de;
+  --hybrid-teal: #0e7c79; // Main site Send word banner.
+
+  .page > #quartz-body .sidebar.left {
+    --light: #2b3034;
+    --lightgray: #505b60;
+    --gray: #aaa79f;
+    --darkgray: #ded7ca;
+    --dark: #efe7d7;
+    --secondary: color-mix(in srgb, var(--hybrid-teal) 60%, #efe7d7);
+    --tertiary: #e6b78d;
+    --highlight: rgba(14, 124, 121, 0.1);
+    --textHighlight: rgba(14, 124, 121, 0.24);
+    color: var(--darkgray);
+    background-color: var(--hybrid-charcoal);
+    background-image: radial-gradient(circle, rgba(239, 231, 215, 0.09) 0.85px, transparent 1.15px);
+    background-size: var(--notebook-grid) var(--notebook-grid);
+    background-position: 0 -16px;
+    color-scheme: dark;
+    box-shadow: inset -1px 0 rgba(37, 43, 46, 0.14);
+  }
+
+  // Use the exact banner teal for graphic accents; tint sidebar text for charcoal contrast.
+  .graph > h3.notebook-banner {
+    --banner-paper: var(--hybrid-teal);
+  }
+
+  // Blue has a content role instead of surrounding the whole page.
+  article .callout[data-callout="quote"] {
+    --color: #24545b;
+    background: var(--hybrid-blue-paper);
+    border: 0;
+    border-left: 3px solid #0e7c79;
+    border-radius: 2px 7px 4px 2px;
+    .callout-title-inner {
+      color: var(--color);
+    }
+  }
+
+  @media (min-width: 801px) {
+    --hybrid-rail-edge: calc(
+      max(0px, (100vw - (#{map.get(quartz.$breakpoints, desktop)} + 300px)) / 2) +
+        #{quartz.$sidePanelWidth}
+    );
+    // The browser exposes the root canvas during elastic overscroll. Continue the
+    // two solid surfaces there; this hard color stop is not a page gradient.
+    &:not([data-notebook-reading="on"]) {
+      background-color: var(--light);
+      background-image: linear-gradient(
+        to right,
+        var(--hybrid-charcoal) 0 var(--hybrid-rail-edge),
+        var(--light) var(--hybrid-rail-edge) 100%
+      );
+      background-attachment: fixed;
+    }
+    // Overscan only the paint layer, leaving sticky geometry and scroll bounds alone.
+    // This also fills behind the rail when it reaches its containing block's end.
+    body::before {
+      content: "";
+      position: fixed;
+      inset: -100vh auto -100vh 0;
+      width: var(--hybrid-rail-edge);
+      background: var(--hybrid-charcoal);
+      pointer-events: none;
+    }
+  }
+
+  // Quartz adds 1rem horizontal page padding below its desktop breakpoint.
+  // Cover that left gutter in both expanded and collapsed tablet navigation.
+  @media (801px <= width < 1200px) {
+    --hybrid-rail-edge: calc(#{quartz.$sidePanelWidth} + 1rem);
+  }
+
+  @media (max-width: 800px) {
+    .page > #quartz-body .sidebar.left {
+      // Paint a full-bleed masthead behind the shared mobile grid.
+      // No negative margins or theme-specific padding to shift the controls.
+      position: relative;
+      isolation: isolate;
+      background: none;
+      box-shadow: none;
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0 -1rem;
+        z-index: -1;
+        pointer-events: none;
+        background-color: var(--hybrid-charcoal);
+        background-image: radial-gradient(
+          circle,
+          rgba(239, 231, 215, 0.09) 0.85px,
+          transparent 1.15px
+        );
+        background-size: var(--notebook-grid) var(--notebook-grid);
+      }
+    }
+  }
+
+  @media print {
+    background: none;
+    body::before,
+    .sidebar.left::before {
+      display: none;
+    }
+  }
+}

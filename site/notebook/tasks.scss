@@ -1,0 +1,90 @@
+// Native inputs keep Quartz's keyboard behavior and local persistence.
+// The irregular contour and drawn SVG tick are purely visual.
+.page article li > input[type="checkbox"] {
+  font: inherit;
+  width: 1.05em;
+  height: 1.05em;
+  border: 1.5px solid var(--gray);
+  border-radius: 3px 5px 2px 4px;
+  background: transparent;
+  transform: translateY(2px) rotate(-3deg);
+  vertical-align: baseline;
+  color: var(--secondary);
+  cursor: pointer;
+  &:focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: 3px;
+  }
+  &:checked {
+    border-color: var(--secondary);
+    background: color-mix(in srgb, var(--secondary) 8%, transparent);
+    &::after {
+      content: "";
+      inset: -4px -3px -1px 0;
+      width: auto;
+      height: auto;
+      border: 0;
+      transform: rotate(3deg);
+      background: currentColor;
+      mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M3 12Q6 15 9 19Q14 10 22 3' fill='none' stroke='black' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+        center / contain no-repeat;
+      animation: notebook-task-check 220ms ease-out;
+    }
+  }
+  &:disabled {
+    cursor: default;
+  }
+}
+.page article li.notebook-task:has(> input[type="checkbox"]:checked) {
+  // Do not strike nested tasks or unrelated block content along with the parent.
+  text-decoration: none;
+  color: inherit;
+}
+.notebook-task-text {
+  background-image: linear-gradient(var(--gray), var(--gray));
+  background-position: 0 55%;
+  background-size: 0% 1.5px;
+  background-repeat: no-repeat;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  transition: background-size 280ms ease-out;
+}
+input[type="checkbox"]:checked + .notebook-task-text {
+  color: var(--gray);
+  background-size: 100% 1.5px;
+}
+@keyframes notebook-task-check {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0);
+  }
+}
+@media (prefers-reduced-motion: reduce), print {
+  .notebook-task-text {
+    transition: none;
+  }
+  .page article li > input[type="checkbox"]:checked::after {
+    animation: none;
+  }
+}
+@media print {
+  input[type="checkbox"]:checked + .notebook-task-text {
+    text-decoration: line-through;
+    background: none;
+  }
+}
+@media (forced-colors: active) {
+  .page article li > input[type="checkbox"] {
+    appearance: auto;
+    transform: none;
+    &::after {
+      display: none;
+    }
+  }
+  input[type="checkbox"]:checked + .notebook-task-text {
+    background: none;
+    text-decoration: line-through;
+  }
+}

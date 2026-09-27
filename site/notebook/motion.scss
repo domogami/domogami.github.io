@@ -1,0 +1,72 @@
+// All content is complete by default. JS adds short, once-per-view animations.
+// Ordinary paragraphs, links, the graph canvas, and navigation never wait for a reveal.
+.graph > h3 {
+  text-align: center;
+}
+.graph > h3.notebook-banner {
+  --banner-paper: var(--secondary);
+  --banner-ink: var(--light);
+  position: relative;
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+  width: min(100%, 240px);
+  height: 60px;
+  margin: 0 auto 0.25rem;
+  padding: 0 2.5rem 14px;
+  color: var(--banner-ink);
+  font: 600 1rem/1.2 var(--headerFont);
+  white-space: nowrap;
+  > svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    pointer-events: none;
+  }
+  path {
+    stroke: var(--banner-paper);
+    fill: var(--banner-paper);
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vector-effect: non-scaling-stroke;
+    stroke-dasharray: 1;
+    stroke-dashoffset: 0;
+  }
+  .notebook-banner-fold {
+    fill: var(--banner-ink);
+    fill-opacity: 0.3;
+  }
+  .notebook-banner-label {
+    position: relative;
+  }
+}
+.notebook-ink-word {
+  display: inline-block;
+  white-space: nowrap;
+}
+.notebook-ink-word-long {
+  display: inline;
+  white-space: normal;
+}
+// Inline glyphs keep accessible names and normal text selection intact.
+.notebook-ink-letter {
+  display: inline;
+}
+// No persistent hidden state, even when scripts are absent, disabled, or interrupted.
+@media print, (prefers-reduced-motion: reduce) {
+  .notebook-ink-letter {
+    opacity: 1 !important;
+  }
+  .notebook-banner path {
+    stroke-dashoffset: 0 !important;
+  }
+  .notebook-banner :is(.notebook-banner-face, .notebook-banner-tail) {
+    fill-opacity: 1 !important;
+  }
+  .notebook-banner .notebook-banner-fold {
+    fill-opacity: 0.3 !important;
+  }
+}

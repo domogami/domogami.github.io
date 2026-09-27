@@ -39,7 +39,7 @@ jobs:
           npx prettier quartz.config.yaml quartz/styles/custom.scss
           .github/workflows/validate-migration.yml .github/workflows/deploy.yml --check
       - name: Build Quartz
-        run: npx quartz build
+        run: npm run site:build
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:

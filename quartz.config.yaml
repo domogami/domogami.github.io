@@ -1,8 +1,7 @@
-# yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: "🪴 Dom Lee"
+  pageTitle: Dom Lee
   pageTitleSuffix: ""
-  enableSPA: true
+  enableSPA: false
   enablePopovers: true
   analytics:
     provider: plausible
@@ -18,33 +17,31 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Schibsted Grotesk
-      body: Source Sans Pro
+      header: Poppins
+      body: Lexend
       code: IBM Plex Mono
+      title: Poppins
     colors:
       lightMode:
-        # Soft cream blended toward the inspiration palette's #DCC9A9.
-        light: "#f0e7d7"
-        lightgray: "#e2d6c5"
-        gray: "#776b5f"
-        darkgray: "#554a42"
-        dark: "#3f6048"
-        secondary: "#3f6048"
-        tertiary: "#9b4036"
-        highlight: rgba(78, 104, 81, 0.16)
-        textHighlight: rgba(223, 160, 93, 0.38)
-      # Atom One Dark palette preserved from the Quartz 4 site.
+        light: "#efe7d7"
+        lightgray: "#cfc5b4"
+        gray: "#77756f"
+        darkgray: "#414748"
+        dark: "#252b2e"
+        secondary: "#0e7c79"
+        tertiary: "#a34e36"
+        highlight: rgba(14, 124, 121, 0.08)
+        textHighlight: rgba(67, 208, 193, 0.24)
       darkMode:
-        light: "#282c34"
-        lightgray: "#495368"
-        gray: "#abb2bf"
-        darkgray: "#abb2bf"
-        dark: "#abb2bf"
-        secondary: "#61afef"
-        tertiary: "#84a59d"
-        highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#b3aa0288"
-
+        light: "#2b3034"
+        lightgray: "#50565a"
+        gray: "#aaa79f"
+        darkgray: "#ded7ca"
+        dark: "#efe7d7"
+        secondary: "#b6cf8e"
+        tertiary: "#e6b78d"
+        highlight: rgba(182, 207, 142, 0.10)
+        textHighlight: rgba(182, 207, 142, 0.24)
 plugins:
   - source: "@quartz-community/note-properties"
     enabled: true
@@ -56,7 +53,7 @@ plugins:
         - aliases
       excludedProperties: []
       hidePropertiesView: true
-      delimiters: "---"
+      delimiters: ---
       language: yaml
     order: 5
   - source: "@quartz-community/created-modified-date"
@@ -64,8 +61,8 @@ plugins:
     options:
       defaultDateType: created
       priority:
-        - git
         - frontmatter
+        - git
         - filesystem
     order: 10
   - source: "@quartz-community/syntax-highlighting"
@@ -117,6 +114,28 @@ plugins:
     order: 80
   - source: "@quartz-community/quartz-fonts"
     enabled: true
+    options:
+      useThemeFonts: false
+      fontOrigin: googleFonts
+      header:
+        name: Poppins
+        weights:
+          - 400
+          - 600
+          - 700
+      body:
+        name: Lexend
+        weights:
+          - 300
+          - 400
+          - 600
+      code: IBM Plex Mono
+      interface: IBM Plex Mono
+      title:
+        name: Poppins
+        weights:
+          - 600
+          - 700
   - source: "@quartz-community/remove-draft"
     enabled: true
   - source: "@quartz-community/alias-redirects"
@@ -141,19 +160,19 @@ plugins:
     layout:
       position: left
       priority: 50
-  - source: "@quartz-community/graph"
+  - source: ./site/notebook/plugins/notebook-graph
     enabled: true
     options:
       localGraph:
         drag: true
         zoom: true
         depth: 2
-        scale: 1.1
-        repelForce: 0.5
+        scale: 0.95
+        repelForce: 0.35
         centerForce: 0.3
-        linkDistance: 30
+        linkDistance: 40
         fontSize: 0.7
-        opacityScale: 1
+        opacityScale: 0.2
         removeTags: []
         showTags: true
         focusOnHover: true
@@ -165,13 +184,13 @@ plugins:
         scale: 0.9
         repelForce: 0.5
         centerForce: 0.3
-        linkDistance: 30
+        linkDistance: 60
         fontSize: 0.6
-        opacityScale: 0.65
+        opacityScale: 0.2
         removeTags: []
         showTags: true
         focusOnHover: true
-        enableRadial: true
+        enableRadial: false
     layout:
       position: right
       priority: 10
@@ -205,18 +224,18 @@ plugins:
       priority: 30
       condition: has-tags
   - source: "@quartz-community/page-title"
-    enabled: true
+    enabled: false
     layout:
       position: left
       priority: 10
   - source: "@quartz-community/darkmode"
-    enabled: true
+    enabled: false
     layout:
       position: left
       priority: 30
       group: toolbar
   - source: "@quartz-community/reader-mode"
-    enabled: true
+    enabled: false
     layout:
       position: left
       priority: 35
@@ -245,7 +264,22 @@ plugins:
       position: left
       priority: 25
       display: mobile-only
-
+  - source: ./site/notebook/plugins/notebook-brand
+    enabled: true
+    layout:
+      position: left
+      priority: 10
+  - source: ./site/notebook/plugins/notebook-theme
+    enabled: true
+    layout:
+      position: left
+      priority: 30
+      group: toolbar
+  - source: ./site/notebook/plugins/notebook-motion
+    enabled: true
+    layout:
+      position: footer
+      priority: 90
 layout:
   groups:
     toolbar:
@@ -262,8 +296,8 @@ layout:
     folder:
       exclude:
         - reader-mode
-      positions:
-        right: []
+        - "@quartz-community/table-of-contents"
+        - "@quartz-community/backlinks"
     tag:
       exclude:
         - reader-mode

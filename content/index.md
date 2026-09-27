@@ -2,9 +2,11 @@
 title: "Dom's Digital Garden"
 ---
 
+> [!annotation|arrow-down] notes, ideas & things taking root
+
 # Welcome Friend!
 
-Hey, I'm Dom! Welcome to my [Digital Garden 🪴](Concepts/Digital%20Garden%20%F0%9F%AA%B4.md)! 
+Hey, I'm Dom! Welcome to my [Digital Garden 🪴](Concepts/Digital%20Garden%20%F0%9F%AA%B4.md)!
 
 This is my continuously growing personal wiki where I write about things that I learn and my experiences throughout my life and journey as a Software Engineer [Working at Amazon](My%20Experiences/Working%20at%20Amazon.md) and a guy in his 20's who is trying to navigate life. If you are curious why I chose Obsidian, take a look at [Why Obsidian?](Why%20Obsidian?.md)
 

@@ -1,0 +1,38 @@
+// Below desktop, related-note tools follow the article instead of squeezing into a row.
+// Let the available article width decide whether two panels fit, including long titles.
+@media (width < 1200px) {
+  .page > #quartz-body > .sidebar.right {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+    align-items: start;
+    gap: 2rem;
+    padding: 1.5rem 0 0;
+    > * {
+      min-width: 0;
+      max-height: none;
+    }
+    > .backlinks {
+      grid-column: 1 / -1;
+    }
+    :is(.toc-content, .backlinks > ul) {
+      max-height: none;
+    }
+    :is(.toc-header h3, .backlinks h3) {
+      font-size: 1.2rem;
+      line-height: 1.4;
+    }
+    .toc-header {
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .backlinks > ul {
+      line-height: 1.7;
+    }
+  }
+}
+@media (801px <= width < 1200px) {
+  .page > #quartz-body > .sidebar.right {
+    padding-inline: 1.5rem 0.5rem;
+  }
+}

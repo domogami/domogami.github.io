@@ -1,0 +1,49 @@
+// Same outline / pause / diagonal ink timing as the portfolio name study.
+// Both name and plant use CSS animations, starting together and replaying as one.
+.notebook-brand > a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.2em;
+}
+.notebook-name {
+  display: block;
+  width: 4.25em;
+  height: auto;
+  overflow: visible;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .notebook-name-outline {
+    stroke-dasharray: 1;
+    animation: notebook-name-outline 2120ms linear both;
+  }
+  .notebook-name-sweep {
+    animation: notebook-name-ink 660ms cubic-bezier(0.4, 0, 0.2, 1) 1320ms both;
+  }
+}
+@keyframes notebook-name-outline {
+  0%,
+  7.547% {
+    stroke-dashoffset: 1;
+    opacity: 1;
+  }
+  7.547% {
+    animation-timing-function: ease-in-out;
+  }
+  55.66%,
+  93.396% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+}
+@keyframes notebook-name-ink {
+  from {
+    transform: translateX(-560px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

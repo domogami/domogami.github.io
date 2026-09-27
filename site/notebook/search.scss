@@ -1,0 +1,48 @@
+// Search is rendered inside the left rail. Give the modal its own theme scopes so
+// Hybrid remains split even when reading mode removes the charcoal rail.
+:root[data-notebook-theme="blended"] .search-container {
+  --light: var(--hybrid-charcoal);
+  --lightgray: #505b60;
+  --gray: #aaa79f;
+  --darkgray: #ded7ca;
+  --dark: #efe7d7;
+  --secondary: color-mix(in srgb, var(--hybrid-teal) 60%, #efe7d7);
+  --tertiary: #e6b78d;
+  --highlight: rgba(14, 124, 121, 0.1);
+  --textHighlight: rgba(14, 124, 121, 0.24);
+  color-scheme: dark;
+
+  .search-layout {
+    overflow: hidden;
+  }
+  .results-container {
+    background: var(--light);
+
+    // Keep query matches legible on both the charcoal list and selected row.
+    // An ink-style underline avoids a second colored block inside the selection.
+    .result-card .highlight {
+      background: transparent;
+      color: var(--dark);
+      border-radius: 0;
+      text-decoration: underline;
+      text-decoration-color: var(--secondary);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.2em;
+    }
+  }
+  // Match the standard light palette in quartz.config.yaml.
+  .preview-container {
+    --light: #efe7d7;
+    --lightgray: #cfc5b4;
+    --gray: #77756f;
+    --darkgray: #414748;
+    --dark: #252b2e;
+    --secondary: var(--hybrid-teal);
+    --tertiary: #a34e36;
+    --highlight: rgba(14, 124, 121, 0.08);
+    --textHighlight: rgba(67, 208, 193, 0.24);
+    min-width: 0;
+    background: var(--light);
+    color-scheme: light;
+  }
+}

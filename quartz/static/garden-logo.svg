@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 584 584" role="img" aria-labelledby="title desc">
+  <title id="title">Dom Lee's digital garden</title>
+  <desc id="desc">A hand-drawn sage plant in a terracotta pot, inside a teal hexagon.</desc>
+  <!-- Shared hexagon silhouette and palette from dominicklee.net. -->
+  <path transform="translate(31 0)" d="M231 8.32051C249.564 -2.39746 272.436 -2.39746 291 8.32051L491.674 124.179C510.238 134.897 521.674 154.705 521.674 176.141V407.859C521.674 429.295 510.238 449.103 491.674 459.82L291 575.68C272.436 586.397 249.564 586.397 231 575.68L30.3264 459.82C11.7623 449.103 0.326355 429.295 0.326355 407.859V176.141C0.326355 154.705 11.7623 134.897 30.3264 124.179L231 8.32051Z" fill="#0e7c79"/>
+  <!-- Original GardenPlant geometry; stronger strokes for small icon sizes. -->
+  <g transform="translate(108 55) scale(3.2)" fill="none" stroke="#efe7d7" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M59 104Q65 91 61 77Q64 65 61 57Q59 53 59 49Q55 40 61 33Q61 21 67 13M61 77Q44 69 23 53M61 57Q80 45 92 26"/>
+    <g fill="#aac6a8">
+      <path d="M59 49Q35 46 35 20Q60 20 59 49Z"/>
+      <path d="M61 57Q61 30 92 26Q94 50 61 57Z"/>
+      <path d="M61 77Q32 79 23 53Q52 51 61 77Z"/>
+      <path d="M61 33Q57 11 79 6Q85 25 61 33Z"/>
+    </g>
+    <path fill="#cc9277" d="M34 103Q61 100 87 103L80 134Q60 139 42 134ZM31 94Q60 91 90 94L89 103Q60 106 32 103Z"/>
+    <path d="M47 113 50 126M37 140Q61 143 85 140"/>
+  </g>
+</svg>

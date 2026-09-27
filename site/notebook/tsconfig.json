@@ -1,0 +1,6 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": { "incremental": false },
+  "include": ["./**/*.ts", "./**/*.tsx", "../../globals.d.ts", "../../index.d.ts"],
+  "exclude": ["plugins/**"]
+}
