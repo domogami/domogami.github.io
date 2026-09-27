@@ -47,6 +47,8 @@ Ordinary prose that mentions these topics is not rewritten. Do not include perso
 
 All colors inherit Quartz's current theme tokens, including Hybrid. The plant remains unchanged; the flower is a separate, unframed plant drawing with a handwritten progress counter fixed in the lower-right corner. Artwork lives in `art.ts` as reusable SVG geometry; `styles.css` controls the ink/bloom animation and notebook shapes.
 
+At the garden's mobile breakpoint (800px and below), the flower sits in its own row after the footer, aligned right with safe-area spacing. It scrolls with the page and never overlaps reading text. When the collector is offscreen, a collected petal gently lifts and fades in place instead of flying down the page. Desktop keeps the fixed corner flower.
+
 Buttons work with mouse, touch, Enter, and Space. Progress is announced through a polite status region. Reduced-motion users skip the petal flight and bloom animation. Collected petals disappear from their page after flying to the flower. Controls have invisible touch padding; printing hides them.
 
 ## Development and upgrade boundary

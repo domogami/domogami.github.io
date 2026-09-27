@@ -122,6 +122,9 @@ if (!window.__flowerHuntStarted) {
         write(key, JSON.stringify(found))
         const from = button.querySelector("svg")!.getBoundingClientRect()
         const to = toggle.getBoundingClientRect()
+        // On mobile the flower lives below the footer. Keep feedback at the
+        // discovered petal when that destination is offscreen; never move the reader.
+        const collectorVisible = to.top >= 0 && to.bottom <= innerHeight
         if (!reducedMotion()) {
           const flight = document.createElement("div")
           flight.className = "flower-flight"
@@ -134,8 +137,10 @@ if (!window.__flowerHuntStarted) {
               [
                 { transform: "translate(0,0) rotate(-15deg)", opacity: 1 },
                 {
-                  transform: `translate(${to.x - from.x + 15}px,${to.y - from.y + 10}px) rotate(${120 + i * 20}deg) scale(.55)`,
-                  opacity: 0.7,
+                  transform: collectorVisible
+                    ? `translate(${to.x - from.x + 15}px,${to.y - from.y + 10}px) rotate(${120 + i * 20}deg) scale(.55)`
+                    : "translate(0,-24px) rotate(25deg) scale(.55)",
+                  opacity: collectorVisible ? 0.7 : 0,
                 },
               ],
               { duration: 650, easing: "cubic-bezier(.3,.05,.2,1)" },

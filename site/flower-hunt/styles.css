@@ -213,7 +213,16 @@ html[data-flower-unlocked] .flower-gate {
     fill-opacity: 1;
   }
 }
-@media (max-width: 600px) {
+/* Match the garden's mobile layout. The collector already follows .page in the
+   document, so its own bottom row cannot cover prose or footer links. */
+@media (max-width: 800px) {
+  .flower-collector {
+    position: relative;
+    inset: auto;
+    width: fit-content;
+    margin: 1rem max(1rem, env(safe-area-inset-right)) max(1rem, env(safe-area-inset-bottom)) auto;
+    z-index: auto;
+  }
   .flower-collector > button {
     width: 50px;
     height: 75px;
