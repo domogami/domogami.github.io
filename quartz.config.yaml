@@ -148,7 +148,9 @@ plugins:
   - source: "@quartz-community/favicon"
     enabled: true
   - source: "@quartz-community/og-image"
-    enabled: true
+    # Use the shared plant banner through Quartz's standard static image fallback.
+    # Source: quartz/static/garden-preview.svg; regenerate with npm run site:social-image.
+    enabled: false
   - source: "@quartz-community/content-page"
     enabled: true
   - source: "@quartz-community/folder-page"

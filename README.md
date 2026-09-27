@@ -1,5 +1,11 @@
 # 🪴 Dom's Digital Garden
 
+<p align="center">
+  <a href="https://domogami.github.io">
+    <img src="quartz/static/og-image.png" alt="Dom Lee beside a drawn plant on warm dotted paper" width="640" />
+  </a>
+</p>
+
 A place for me to publish my learnings as I dive into topics and document my active projects.
 
 Because I couldn't bring myself to pay [10 dollars a month for Obsidian Publish](https://obsidian.md/publish), I have decided to use a modified version of [quartz](https://quartz.jzhao.xyz/) based on [Brandon Boswell's Tutorial](https://www.youtube.com/watch?v=ITiiuBNVue0&t=364s) which has allowed me to host my own digital garden using GitHub Pages.
@@ -38,6 +44,10 @@ SHARP_IGNORE_GLOBAL_LIBVIPS=1 npm ci
 ```
 
 After editing the custom components or browser scripts, rebuild their local plugin packages with `node site/notebook/build.mjs` and restart the preview. See the [notebook layer guide](site/notebook/README.md) for checks and upgrade notes.
+
+### Share banner
+
+The banner above also appears in link previews. Edit the portable [SVG source](quartz/static/garden-preview.svg), then run `npm run site:social-image` to regenerate the 1200 × 630 PNG. Commit both files; the README displays the same image at a compact 640px width.
 
 ## Publishing
 

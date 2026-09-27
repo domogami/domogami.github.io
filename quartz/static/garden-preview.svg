@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">Dom Lee · Digital garden</title>
+  <desc id="description">A hand-drawn sage plant in a terracotta pot beside Dom Lee on warm dotted notebook paper.</desc>
+  <!-- EDITABLE SOURCE: explicit colors, named groups, no linked fonts or images.
+       Name outlines are Poppins Bold (SIL OFL); see site/notebook/poppins-OFL.txt.
+       Plant geometry matches NotebookBrand.tsx and the garden favicon.
+       Regenerate the share PNG with: npm run site:social-image -->
+  <defs>
+    <pattern id="dotpad" x="7" y="7" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="15" cy="15" r="1.55" fill="#718775" opacity="0.28"/>
+    </pattern>
+  </defs>
+  <g id="paper">
+    <path fill="#efe7d7" d="M0 0H1200V630H0Z"/>
+    <path fill="url(#dotpad)" d="M0 0H1200V630H0Z"/>
+  </g>
+  <!-- Plant can be copied independently into any SVG using a 120 x 144 viewBox. -->
+  <g id="plant" transform="translate(146 126) scale(2.55)" fill="none" stroke="#0e7c79" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+    <path id="stem" d="M59 104Q65 91 61 77Q64 65 61 57Q59 53 59 49Q55 40 61 33Q61 21 67 13M61 77Q44 69 23 53M61 57Q80 45 92 26"/>
+    <g id="leaves" fill="#aac6a8">
+      <path d="M59 49Q35 46 35 20Q60 20 59 49Z"/>
+      <path d="M61 57Q61 30 92 26Q94 50 61 57Z"/>
+      <path d="M61 77Q32 79 23 53Q52 51 61 77Z"/>
+      <path d="M61 33Q57 11 79 6Q85 25 61 33Z"/>
+    </g>
+    <g id="pot" stroke="#a85438">
+      <path fill="#cc9277" d="M34 103Q61 100 87 103L80 134Q60 139 42 134ZM31 94Q60 91 90 94L89 103Q60 106 32 103Z"/>
+      <path stroke="#efe7d7" d="M47 113 50 126"/>
+      <path d="M37 140Q61 143 85 140"/>
+    </g>
+  </g>
+  <!-- Scalable name outlines: portable rendering, no font installation needed. -->
+  <g id="name" transform="translate(458 211) scale(1.48)" fill="#292f32">
+      <path d="M69.3 52.9Q69.3 63.2 64.75 71.2Q60.2 79.2 51.85 83.6Q43.5 88 32.5 88H6.2V17.8H32.5Q43.6 17.8 51.9 22.2Q60.2 26.6 64.75 34.55Q69.3 42.5 69.3 52.9ZM51.9 52.9Q51.9 43.2 46.5 37.8Q41.1 32.4 31.4 32.4H23.3V73.2H31.4Q41.1 73.2 46.5 67.9Q51.9 62.6 51.9 52.9Z"/>
+      <path d="M72.167 60.1Q72.167 51.5 75.967 44.95Q79.767 38.4 86.367 34.9Q92.967 31.4 101.167 31.4Q109.367 31.4 115.967 34.9Q122.567 38.4 126.367 44.95Q130.167 51.5 130.167 60.1Q130.167 68.7 126.317 75.25Q122.467 81.8 115.817 85.3Q109.167 88.8 100.967 88.8Q92.767 88.8 86.217 85.3Q79.667 81.8 75.917 75.3Q72.167 68.8 72.167 60.1ZM112.767 60.1Q112.767 53.4 109.417 49.8Q106.067 46.2 101.167 46.2Q96.167 46.2 92.867 49.75Q89.567 53.3 89.567 60.1Q89.567 66.8 92.817 70.4Q96.067 74 100.967 74Q105.867 74 109.317 70.4Q112.767 66.8 112.767 60.1Z"/>
+      <path d="M229.833 55.4V88H212.833V57.7Q212.833 52.3 209.983 49.35Q207.133 46.4 202.133 46.4Q197.133 46.4 194.283 49.35Q191.433 52.3 191.433 57.7V88H174.433V57.7Q174.433 52.3 171.583 49.35Q168.733 46.4 163.733 46.4Q158.733 46.4 155.883 49.35Q153.033 52.3 153.033 57.7V88H135.933V32.2H153.033V39.2Q155.633 35.7 159.833 33.65Q164.033 31.6 169.333 31.6Q175.633 31.6 180.583 34.3Q185.533 37 188.333 42Q191.233 37.4 196.233 34.5Q201.233 31.6 207.133 31.6Q217.533 31.6 223.683 37.9Q229.833 44.2 229.833 55.4Z"/>
+      <path d="M273.467 74.8H295.867V88H256.367V17.8H273.467Z"/>
+      <path d="M353.033 64.2H314.333Q314.733 69.4 317.683 72.15Q320.633 74.9 324.933 74.9Q331.333 74.9 333.833 69.5H352.033Q350.633 75 346.983 79.4Q343.333 83.8 337.833 86.3Q332.333 88.8 325.533 88.8Q317.333 88.8 310.933 85.3Q304.533 81.8 300.933 75.3Q297.333 68.8 297.333 60.1Q297.333 51.4 300.883 44.9Q304.433 38.4 310.833 34.9Q317.233 31.4 325.533 31.4Q333.633 31.4 339.933 34.8Q346.233 38.2 349.783 44.5Q353.333 50.8 353.333 59.2Q353.333 61.6 353.033 64.2ZM335.833 54.7Q335.833 50.3 332.833 47.7Q329.833 45.1 325.333 45.1Q321.033 45.1 318.083 47.6Q315.133 50.1 314.433 54.7Z"/>
+      <path d="M411.3 64.2H372.6Q373 69.4 375.95 72.15Q378.9 74.9 383.2 74.9Q389.6 74.9 392.1 69.5H410.3Q408.9 75 405.25 79.4Q401.6 83.8 396.1 86.3Q390.6 88.8 383.8 88.8Q375.6 88.8 369.2 85.3Q362.8 81.8 359.2 75.3Q355.6 68.8 355.6 60.1Q355.6 51.4 359.15 44.9Q362.7 38.4 369.1 34.9Q375.5 31.4 383.8 31.4Q391.9 31.4 398.2 34.8Q404.5 38.2 408.05 44.5Q411.6 50.8 411.6 59.2Q411.6 61.6 411.3 64.2ZM394.1 54.7Q394.1 50.3 391.1 47.7Q388.1 45.1 383.6 45.1Q379.3 45.1 376.35 47.6Q373.4 50.1 372.7 54.7Z"/>
+  </g>
+  <g id="pencil-underline" fill="none" stroke="#0e7c79" stroke-linecap="round">
+    <path d="M472 386Q692 373 1041 383" stroke-width="5" opacity="0.78"/>
+    <path d="M478 394Q746 383 1027 390" stroke-width="2" opacity="0.30"/>
+  </g>
+</svg>

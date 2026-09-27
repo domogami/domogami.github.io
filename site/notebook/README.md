@@ -68,6 +68,14 @@ The main `.center` grid item explicitly fills its track with zero inline margins
 
 Run `node site/notebook/build-icon.mjs` after editing the SVG to regenerate `quartz/static/icon.png` at 512px. Quartz's standard head and favicon emitter consume this PNG; no core override is needed. Run a full site build to refresh the generated `/favicon.ico`. The animated plant/name header remains a separate treatment of the same brand.
 
+### Share preview
+
+`quartz/static/garden-preview.svg` is the editable 1200 × 630 social banner: warm dotted paper, the drawn plant, and the Dom Lee wordmark. It is a standalone vector with named groups (`paper`, `plant`, `name`, and `pencil-underline`), explicit colors, and no external fonts or images. The outlined Poppins letters use the same glyphs and license as the header; edit their paths in a vector editor if changing the name.
+
+After changing the SVG, run `npm run site:social-image` to regenerate `quartz/static/og-image.png`, then rebuild the site. Commit both the source and PNG. The generator uses the existing Sharp dependency, so it works without a browser or font installation.
+
+The community OG-image emitter is disabled in `quartz.config.yaml`. Quartz's standard head therefore points Open Graph and Twitter metadata to the shared `/static/og-image.png` using the configured `baseUrl`. This gives the home page and every note the same garden artwork while preserving each page's own title and description, without modifying Quartz core or source notes. Re-enable the emitter if returning to generated per-page images or frontmatter `socialImage` overrides. Messaging apps may cache old previews after deployment.
+
 ### Hybrid overscroll surface
 
 At desktop/tablet widths, `hybrid.scss` paints the full left rail behind its sticky content and extends this fixed paint one viewport above and below the screen. A matching hard split on the root canvas supplies the colors exposed by elastic overscroll. The boundary derives from Quartz's sidebar width and centered page gutter, including the tablet inset. This changes no layout boxes, scroll dimensions, or native overscroll behavior. The split is absent on mobile, in reading mode, in other themes, and in print. Verified boundary alignment at 801/1199/1200px and wider, unchanged document dimensions, and theme/reading-mode reset. Native Arc/macOS rubber-band motion still needs a manual gesture check; normal browser automation cannot establish its exact compositor behavior.

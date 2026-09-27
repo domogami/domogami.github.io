@@ -12,6 +12,7 @@
     "url": "https://github.com/jackyzha0/quartz.git"
   },
   "scripts": {
+    "site:social-image": "node site/notebook/build-social-image.mjs",
     "site:build": "node site/build.mjs",
     "site:preview": "node site/build.mjs --serve",
     "quartz": "./quartz/bootstrap-cli.mjs",
